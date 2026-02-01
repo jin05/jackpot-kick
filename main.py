@@ -6,7 +6,11 @@ from src import (
     load_raw_data,
     save_processed_data,
     TotoModel,
+    MatchPredictor,
+    MatchCard,
+    MatchOdds,
 )
+from src.predictor import create_sample_matches
 
 
 def main():
@@ -124,6 +128,31 @@ def main():
     models_dir.mkdir(exist_ok=True)
     model_path = models_dir / "lgbm_model.pkl"
     model.save(model_path)
+
+    # ========================================
+    # Phase 4: 予測 & 戦略
+    # ========================================
+    print("\n" + "=" * 50)
+    print("Phase 4: Prediction & Strategy...")
+    print("=" * 50)
+
+    # MatchPredictorの初期化
+    # 過去データから学習済みのFeatureEngineerを使用
+    predictor = MatchPredictor(
+        model=model,
+        engineer=engineer,
+        verbose=True,
+    )
+
+    # サンプルの対戦カードを作成
+    matches = create_sample_matches()
+    print(f"\n次回Toto対象試合: {len(matches)}試合")
+
+    # 予測を実行
+    results = predictor.predict_matches(matches)
+
+    # 結果を表示
+    predictor.display_predictions(results)
 
     print("\n" + "=" * 50)
     print("All phases completed successfully!")
