@@ -1,6 +1,12 @@
 from pathlib import Path
 
-from src import MockDataGenerator, FeatureEngineer, load_raw_data, save_processed_data
+from src import (
+    MockDataGenerator,
+    FeatureEngineer,
+    load_raw_data,
+    save_processed_data,
+    TotoModel,
+)
 
 
 def main():
@@ -76,6 +82,52 @@ def main():
     print(f"\nTeam label mapping:")
     for encoded, name in engineer.get_team_labels().items():
         print(f"  {encoded}: {name}")
+
+    # ========================================
+    # Phase 3: モデル学習
+    # ========================================
+    print("\n" + "=" * 50)
+    print("Phase 3: Model Training with LightGBM...")
+    print("=" * 50)
+
+    # TotoModelの初期化
+    model = TotoModel(
+        n_trials=50,  # Optunaの試行回数
+        n_splits=5,   # クロスバリデーションの分割数
+        random_state=42,
+        verbose=True,
+    )
+
+    # 特徴量とターゲットを準備
+    X = model.prepare_features(processed_df)
+    y = model.prepare_target(processed_df)
+
+    print(f"\nDataset prepared:")
+    print(f"  Features shape: {X.shape}")
+    print(f"  Target shape: {y.shape}")
+    print(f"  Class distribution:")
+    for cls in [0, 1, 2]:
+        count = (y == cls).sum()
+        print(f"    Class {cls}: {count} ({count / len(y) * 100:.1f}%)")
+
+    # モデルの学習（ハイパーパラメータ最適化 + クロスバリデーション）
+    model.fit(X, y, optimize=True)
+
+    # 特徴量重要度の表示
+    print("\nFeature importance:")
+    importance_df = model.get_feature_importance()
+    for _, row in importance_df.iterrows():
+        print(f"  {row['feature']}: {row['importance']}")
+
+    # モデルの保存
+    models_dir = Path("models")
+    models_dir.mkdir(exist_ok=True)
+    model_path = models_dir / "lgbm_model.pkl"
+    model.save(model_path)
+
+    print("\n" + "=" * 50)
+    print("All phases completed successfully!")
+    print("=" * 50)
 
 
 if __name__ == "__main__":
