@@ -209,3 +209,6 @@ __marimo__/
 
 # Generated data files
 data/processed_features.csv
+
+# Trained models
+models/
