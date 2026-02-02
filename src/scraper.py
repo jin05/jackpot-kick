@@ -160,6 +160,62 @@ class JLeagueScraper:
         else:
             return 1  # Draw
 
+    def _convert_date_with_year_context(self, date_str: str, target_year: int) -> str:
+        """
+        年度パラメータのコンテキストを使用して、短縮形の年号を4桁に修正
+
+        Jリーグサイトでは年末から翌年の日付が「24/12/31」と「25/01/10」のように
+        2桁年号で表記されます。このメソッドは、取得対象の年度を基準に正確に
+        年号を補正します。
+
+        例：
+        - target_year=2025, date_str="25/01/10" → "2025-01-10"
+        - target_year=2025, date_str="24/12/31" → "2024-12-31"
+        - target_year=2024, date_str="24/02/23" → "2024-02-23"
+
+        Args:
+            date_str: "YY/MM/DD"形式の日付文字列（例: "25/01/10"）
+            target_year: Jリーグシーズンの年度（例: 2025）
+
+        Returns:
+            "YYYY-MM-DD"形式の日付文字列
+        """
+        try:
+            # まず2桁年号をパースして仮の日付を作成
+            date_obj = datetime.strptime(date_str, "%y/%m/%d")
+            parsed_year_short = date_obj.year  # %yで解釈された年（2000-2099）
+
+            # target_yearを基準に正確な年を決定
+            # Jリーグシーズンは1月から12月。例：2025年シーズンは2025/1-12月の試合
+            # 一方、翌シーズンの試合は翌年になる（2026年）
+
+            # パースされた年が対象年度と一致する場合
+            if parsed_year_short == target_year:
+                result_year = target_year
+            # パースされた年が前年（シーズン開始前の12月）の場合
+            elif parsed_year_short == target_year - 1:
+                result_year = target_year - 1
+            # パースされた年が翌年（シーズン終了後の1月など）の場合
+            elif parsed_year_short == target_year + 1:
+                result_year = target_year + 1
+            # 上記以外は、パースされた年をそのまま使用
+            else:
+                # 年末年始の処理：12月→前年、1月→当該年として判定
+                month = date_obj.month
+                if month == 12:
+                    result_year = target_year - 1
+                elif month == 1:
+                    result_year = target_year
+                else:
+                    result_year = target_year
+
+            # 正確な年で日付を再構成
+            corrected_date = date_obj.replace(year=result_year)
+            return corrected_date.strftime("%Y-%m-%d")
+
+        except ValueError:
+            return None
+
     def fetch_match_results(
         self,
         year: int,
@@ -239,22 +295,28 @@ class JLeagueScraper:
                     # 日付のパース
                     try:
                         # 複数の日付フォーマットに対応
-                        date_obj = None
+                        date_str = None
                         # まず "YY/MM/DD(曜日)" 形式をクリーンアップ
                         date_clean = date_text.split("(")[0].strip()  # "24/02/23(金・祝)" -> "24/02/23"
 
-                        # 年を4桁にする必要がある
-                        for fmt in ["%y/%m/%d", "%Y/%m/%d", "%Y-%m-%d", "%Y年%m月%d日"]:
-                            try:
-                                date_obj = datetime.strptime(date_clean, fmt)
-                                break
-                            except ValueError:
-                                continue
+                        # 年度パラメータのコンテキストを使用して日付を補正
+                        # これにより、年末から翌年にかけての日付誤認識を防止
+                        if "/" in date_clean and date_clean.count("/") == 2:
+                            # "YY/MM/DD" 形式
+                            date_str = self._convert_date_with_year_context(date_clean, year)
+                        else:
+                            # その他のフォーマットに対応
+                            date_obj = None
+                            for fmt in ["%Y/%m/%d", "%Y-%m-%d", "%Y年%m月%d日"]:
+                                try:
+                                    date_obj = datetime.strptime(date_clean, fmt)
+                                    date_str = date_obj.strftime("%Y-%m-%d")
+                                    break
+                                except ValueError:
+                                    continue
 
-                        if date_obj is None:
+                        if date_str is None:
                             continue
-
-                        date_str = date_obj.strftime("%Y-%m-%d")
                     except ValueError:
                         continue
 
