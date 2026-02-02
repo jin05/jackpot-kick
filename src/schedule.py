@@ -467,7 +467,7 @@ class MatchScheduleFetcher:
             kickoff = match.kickoff_time or "--:--"
             print(
                 f"{i:<4} {match.date:<12} {kickoff:<8} "
-                f"{match.home_team_en:^15} {'vs':^4} {match.away_team_en:^15}"
+                f"{match.home_team:^15} {'vs':^4} {match.away_team:^15}"
             )
 
         print("-" * 80)
@@ -489,6 +489,12 @@ class MatchScheduleFetcher:
             print("  対戦カードがありません。")
             return
 
+        # 英語から日本語への逆引きマップを作成
+        en_to_jp_map = {}
+        for jp_name, en_name in TEAM_NAME_MAP.items():
+            if en_name not in en_to_jp_map:
+                en_to_jp_map[en_name] = jp_name
+
         print(
             f"{'No.':<4} {'ホーム':^18} {'vs':^4} {'アウェイ':^18} "
             f"{'Home Win':>10} {'Draw':>10} {'Away Win':>10}"
@@ -496,8 +502,11 @@ class MatchScheduleFetcher:
         print("-" * 100)
 
         for i, card in enumerate(match_cards, 1):
+            # 英語名を日本語名に変換（見つからない場合は英語名のまま）
+            home_jp = en_to_jp_map.get(card.home_team, card.home_team)
+            away_jp = en_to_jp_map.get(card.away_team, card.away_team)
             print(
-                f"{i:<4} {card.home_team:^18} {'vs':^4} {card.away_team:^18} "
+                f"{i:<4} {home_jp:^18} {'vs':^4} {away_jp:^18} "
                 f"{card.odds.home_win:>10.2f} {card.odds.draw:>10.2f} {card.odds.away_win:>10.2f}"
             )
 

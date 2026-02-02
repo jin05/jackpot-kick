@@ -11,6 +11,7 @@ import pandas as pd
 
 from .features import FeatureEngineer, load_raw_data
 from .model import TotoModel
+from .scraper import TEAM_NAME_MAP
 
 
 @dataclass
@@ -288,20 +289,29 @@ class MatchPredictor:
         Args:
             results: 予測結果のリスト
         """
+        # 英語から日本語への逆引きマップを作成
+        en_to_jp_map = {}
+        for jp_name, en_name in TEAM_NAME_MAP.items():
+            if en_name not in en_to_jp_map:
+                en_to_jp_map[en_name] = jp_name
+
         print("\n" + "=" * 100)
         print("【Toto予測結果】")
         print("=" * 100)
 
         # ヘッダー
         print(
-            f"{'No.':<4} {'対戦カード':<25} "
+            f"{'No.':<4} {'対戦カード':<30} "
             f"{'Home Win':>10} {'Draw':>10} {'Away Win':>10} "
             f"{'推奨':<15}"
         )
         print("-" * 100)
 
         for i, result in enumerate(results, 1):
-            match_str = f"{result.match.home_team} vs {result.match.away_team}"
+            # 英語名を日本語名に変換
+            home_jp = en_to_jp_map.get(result.match.home_team, result.match.home_team)
+            away_jp = en_to_jp_map.get(result.match.away_team, result.match.away_team)
+            match_str = f"{home_jp} vs {away_jp}"
 
             # 確率表示（パーセンテージ）
             home_prob_str = f"{result.prob_home_win:.1%}"
@@ -316,7 +326,7 @@ class MatchPredictor:
                 recommendation = "-"
 
             print(
-                f"{i:<4} {match_str:<25} "
+                f"{i:<4} {match_str:<30} "
                 f"{home_prob_str:>10} {draw_prob_str:>10} {away_prob_str:>10} "
                 f"{recommendation:<15}"
             )
@@ -327,14 +337,17 @@ class MatchPredictor:
         print("\n【期待値 (EV) 詳細】")
         print("-" * 100)
         print(
-            f"{'No.':<4} {'対戦カード':<25} "
+            f"{'No.':<4} {'対戦カード':<30} "
             f"{'EV(Home)':>12} {'EV(Draw)':>12} {'EV(Away)':>12} "
             f"{'Value Bets':<20}"
         )
         print("-" * 100)
 
         for i, result in enumerate(results, 1):
-            match_str = f"{result.match.home_team} vs {result.match.away_team}"
+            # 英語名を日本語名に変換
+            home_jp = en_to_jp_map.get(result.match.home_team, result.match.home_team)
+            away_jp = en_to_jp_map.get(result.match.away_team, result.match.away_team)
+            match_str = f"{home_jp} vs {away_jp}"
 
             # 期待値の表示（プラスは★でハイライト）
             def format_ev(ev: float) -> str:
@@ -356,7 +369,7 @@ class MatchPredictor:
                 value_bets_str = "なし"
 
             print(
-                f"{i:<4} {match_str:<25} "
+                f"{i:<4} {match_str:<30} "
                 f"{ev_home_str:>12} {ev_draw_str:>12} {ev_away_str:>12} "
                 f"{value_bets_str:<20}"
             )
@@ -367,15 +380,18 @@ class MatchPredictor:
         print("\n【オッズ情報】")
         print("-" * 80)
         print(
-            f"{'No.':<4} {'対戦カード':<25} "
+            f"{'No.':<4} {'対戦カード':<30} "
             f"{'Odds(Home)':>12} {'Odds(Draw)':>12} {'Odds(Away)':>12}"
         )
         print("-" * 80)
 
         for i, result in enumerate(results, 1):
-            match_str = f"{result.match.home_team} vs {result.match.away_team}"
+            # 英語名を日本語名に変換
+            home_jp = en_to_jp_map.get(result.match.home_team, result.match.home_team)
+            away_jp = en_to_jp_map.get(result.match.away_team, result.match.away_team)
+            match_str = f"{home_jp} vs {away_jp}"
             print(
-                f"{i:<4} {match_str:<25} "
+                f"{i:<4} {match_str:<30} "
                 f"{result.match.odds.home_win:>12.2f} "
                 f"{result.match.odds.draw:>12.2f} "
                 f"{result.match.odds.away_win:>12.2f}"
