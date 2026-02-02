@@ -1,1001 +1,381 @@
 date,home_team,away_team,home_score,away_score,result
-2020-01-02,Team_K,Team_Q,0,0,1
-2020-01-02,Team_N,Team_G,5,1,2
-2020-01-03,Team_R,Team_O,3,0,2
-2020-01-04,Team_Q,Team_G,2,3,0
-2020-01-04,Team_L,Team_H,4,3,2
-2020-01-06,Team_B,Team_A,1,0,2
-2020-01-15,Team_C,Team_B,1,0,2
-2020-01-16,Team_Q,Team_L,4,5,0
-2020-01-16,Team_G,Team_K,1,1,1
-2020-01-17,Team_D,Team_O,1,2,0
-2020-01-19,Team_G,Team_R,3,2,2
-2020-01-19,Team_D,Team_M,3,1,2
-2020-01-20,Team_F,Team_C,3,3,1
-2020-01-20,Team_O,Team_D,0,4,0
-2020-01-22,Team_D,Team_J,1,4,0
-2020-01-29,Team_I,Team_D,3,2,2
-2020-01-31,Team_C,Team_I,1,3,0
-2020-02-02,Team_G,Team_E,5,3,2
-2020-02-03,Team_I,Team_O,2,1,2
-2020-02-03,Team_D,Team_G,3,3,1
-2020-02-04,Team_C,Team_A,2,1,2
-2020-02-06,Team_A,Team_I,1,5,0
-2020-02-08,Team_Q,Team_A,4,4,1
-2020-02-10,Team_M,Team_Q,0,2,0
-2020-02-11,Team_M,Team_Q,0,5,0
-2020-02-11,Team_E,Team_I,1,3,0
-2020-02-13,Team_R,Team_H,4,1,2
-2020-02-14,Team_M,Team_I,0,5,0
-2020-02-17,Team_C,Team_N,4,3,2
-2020-02-20,Team_P,Team_D,2,3,0
-2020-02-22,Team_C,Team_I,5,4,2
-2020-02-22,Team_E,Team_A,2,1,2
-2020-02-22,Team_J,Team_N,3,5,0
-2020-02-23,Team_K,Team_H,0,2,0
-2020-02-23,Team_F,Team_Q,4,3,2
-2020-02-23,Team_L,Team_M,3,4,0
-2020-02-25,Team_O,Team_G,3,2,2
-2020-02-29,Team_F,Team_H,1,0,2
-2020-03-05,Team_K,Team_C,4,1,2
-2020-03-05,Team_J,Team_O,1,1,1
-2020-03-06,Team_A,Team_D,1,1,1
-2020-03-07,Team_E,Team_P,2,2,1
-2020-03-09,Team_J,Team_A,2,2,1
-2020-03-11,Team_H,Team_K,3,3,1
-2020-03-13,Team_G,Team_L,5,5,1
-2020-03-13,Team_R,Team_N,1,2,0
-2020-03-14,Team_R,Team_A,0,4,0
-2020-03-17,Team_M,Team_I,4,4,1
-2020-03-18,Team_C,Team_B,1,4,0
-2020-03-18,Team_C,Team_D,0,1,0
-2020-03-19,Team_J,Team_Q,5,1,2
-2020-03-21,Team_R,Team_P,1,5,0
-2020-03-21,Team_J,Team_P,0,4,0
-2020-03-21,Team_J,Team_M,5,2,2
-2020-03-22,Team_B,Team_N,4,2,2
-2020-03-22,Team_N,Team_K,4,2,2
-2020-03-23,Team_B,Team_C,1,5,0
-2020-03-24,Team_N,Team_I,4,2,2
-2020-03-26,Team_J,Team_M,0,2,0
-2020-03-31,Team_M,Team_K,3,0,2
-2020-04-01,Team_D,Team_A,2,5,0
-2020-04-03,Team_I,Team_G,4,3,2
-2020-04-03,Team_H,Team_N,4,0,2
-2020-04-04,Team_H,Team_Q,4,0,2
-2020-04-07,Team_K,Team_I,0,2,0
-2020-04-08,Team_M,Team_P,5,3,2
-2020-04-08,Team_D,Team_O,3,3,1
-2020-04-09,Team_B,Team_E,5,0,2
-2020-04-09,Team_B,Team_E,5,3,2
-2020-04-10,Team_J,Team_I,1,0,2
-2020-04-10,Team_P,Team_J,1,4,0
-2020-04-11,Team_F,Team_H,1,5,0
-2020-04-14,Team_R,Team_G,2,4,0
-2020-04-16,Team_L,Team_H,5,0,2
-2020-04-17,Team_F,Team_I,4,0,2
-2020-04-17,Team_K,Team_C,2,0,2
-2020-04-17,Team_E,Team_O,4,0,2
-2020-04-18,Team_B,Team_H,2,1,2
-2020-04-19,Team_C,Team_Q,1,4,0
-2020-04-19,Team_M,Team_R,2,1,2
-2020-04-19,Team_D,Team_O,1,0,2
-2020-04-20,Team_E,Team_F,1,2,0
-2020-04-20,Team_D,Team_B,3,5,0
-2020-04-21,Team_H,Team_Q,3,0,2
-2020-04-21,Team_A,Team_G,4,3,2
-2020-04-23,Team_D,Team_R,1,2,0
-2020-04-24,Team_J,Team_M,2,3,0
-2020-04-24,Team_H,Team_B,2,3,0
-2020-04-25,Team_E,Team_R,2,1,2
-2020-04-27,Team_B,Team_Q,4,4,1
-2020-04-29,Team_P,Team_R,2,4,0
-2020-04-30,Team_F,Team_D,3,4,0
-2020-05-02,Team_F,Team_K,4,5,0
-2020-05-02,Team_F,Team_P,3,3,1
-2020-05-03,Team_P,Team_Q,0,0,1
-2020-05-06,Team_E,Team_D,0,5,0
-2020-05-06,Team_R,Team_Q,1,4,0
-2020-05-06,Team_O,Team_D,2,5,0
-2020-05-10,Team_P,Team_O,2,4,0
-2020-05-12,Team_G,Team_P,1,0,2
-2020-05-14,Team_E,Team_J,4,5,0
-2020-05-17,Team_C,Team_D,0,3,0
-2020-05-19,Team_P,Team_O,5,2,2
-2020-05-20,Team_H,Team_M,2,1,2
-2020-05-20,Team_C,Team_I,3,0,2
-2020-05-21,Team_R,Team_E,1,5,0
-2020-05-22,Team_G,Team_L,3,3,1
-2020-05-22,Team_I,Team_O,2,4,0
-2020-05-23,Team_K,Team_L,5,0,2
-2020-05-25,Team_H,Team_J,5,4,2
-2020-05-28,Team_L,Team_N,4,0,2
-2020-05-29,Team_J,Team_C,2,0,2
-2020-05-30,Team_C,Team_L,4,1,2
-2020-05-31,Team_E,Team_L,5,0,2
-2020-06-01,Team_I,Team_B,1,2,0
-2020-06-01,Team_B,Team_A,3,1,2
-2020-06-02,Team_M,Team_L,4,5,0
-2020-06-05,Team_Q,Team_D,4,4,1
-2020-06-06,Team_J,Team_F,4,1,2
-2020-06-08,Team_E,Team_I,4,5,0
-2020-06-10,Team_O,Team_P,4,3,2
-2020-06-10,Team_O,Team_L,0,4,0
-2020-06-10,Team_L,Team_P,5,2,2
-2020-06-10,Team_M,Team_B,4,4,1
-2020-06-10,Team_L,Team_N,3,4,0
-2020-06-11,Team_A,Team_J,1,1,1
-2020-06-12,Team_K,Team_J,2,3,0
-2020-06-14,Team_E,Team_F,1,3,0
-2020-06-16,Team_P,Team_A,5,4,2
-2020-06-21,Team_Q,Team_F,0,1,0
-2020-06-22,Team_D,Team_R,1,5,0
-2020-06-22,Team_J,Team_N,5,2,2
-2020-06-24,Team_H,Team_O,3,4,0
-2020-06-24,Team_D,Team_F,2,2,1
-2020-06-27,Team_M,Team_N,4,2,2
-2020-06-29,Team_P,Team_O,2,0,2
-2020-06-29,Team_N,Team_D,1,3,0
-2020-07-04,Team_M,Team_L,4,0,2
-2020-07-05,Team_P,Team_L,3,2,2
-2020-07-05,Team_H,Team_M,3,4,0
-2020-07-08,Team_N,Team_I,0,0,1
-2020-07-09,Team_J,Team_H,3,5,0
-2020-07-09,Team_O,Team_L,0,4,0
-2020-07-13,Team_K,Team_O,2,5,0
-2020-07-14,Team_E,Team_O,0,2,0
-2020-07-15,Team_F,Team_A,5,0,2
-2020-07-16,Team_L,Team_E,4,0,2
-2020-07-20,Team_H,Team_E,2,5,0
-2020-07-22,Team_L,Team_M,0,3,0
-2020-07-24,Team_G,Team_K,1,2,0
-2020-07-25,Team_J,Team_M,3,2,2
-2020-07-25,Team_B,Team_P,4,5,0
-2020-07-26,Team_I,Team_H,3,2,2
-2020-07-27,Team_E,Team_D,0,0,1
-2020-07-28,Team_R,Team_H,5,5,1
-2020-07-30,Team_K,Team_M,2,1,2
-2020-07-31,Team_M,Team_K,4,3,2
-2020-08-02,Team_C,Team_L,1,3,0
-2020-08-05,Team_B,Team_G,3,1,2
-2020-08-06,Team_H,Team_N,4,2,2
-2020-08-06,Team_C,Team_A,2,3,0
-2020-08-09,Team_H,Team_Q,0,4,0
-2020-08-09,Team_M,Team_B,3,1,2
-2020-08-11,Team_E,Team_D,1,3,0
-2020-08-11,Team_F,Team_I,4,1,2
-2020-08-17,Team_C,Team_F,4,0,2
-2020-08-19,Team_N,Team_P,0,0,1
-2020-08-21,Team_D,Team_I,0,2,0
-2020-08-21,Team_I,Team_M,4,0,2
-2020-08-21,Team_C,Team_N,3,0,2
-2020-08-22,Team_F,Team_K,0,4,0
-2020-08-23,Team_I,Team_H,3,4,0
-2020-08-23,Team_O,Team_C,1,1,1
-2020-08-24,Team_J,Team_N,3,3,1
-2020-08-25,Team_O,Team_B,2,5,0
-2020-08-26,Team_E,Team_B,0,2,0
-2020-08-28,Team_P,Team_H,5,4,2
-2020-09-02,Team_M,Team_R,2,3,0
-2020-09-03,Team_N,Team_E,3,0,2
-2020-09-04,Team_H,Team_I,0,2,0
-2020-09-05,Team_G,Team_E,1,3,0
-2020-09-09,Team_M,Team_L,3,2,2
-2020-09-10,Team_R,Team_I,3,5,0
-2020-09-12,Team_J,Team_C,1,2,0
-2020-09-16,Team_I,Team_D,0,2,0
-2020-09-16,Team_I,Team_B,0,4,0
-2020-09-18,Team_Q,Team_C,5,5,1
-2020-09-22,Team_C,Team_D,2,3,0
-2020-09-23,Team_F,Team_J,0,2,0
-2020-09-24,Team_H,Team_K,2,2,1
-2020-09-25,Team_J,Team_P,2,0,2
-2020-09-25,Team_G,Team_A,4,4,1
-2020-10-01,Team_K,Team_Q,2,1,2
-2020-10-02,Team_I,Team_D,0,5,0
-2020-10-03,Team_C,Team_P,0,2,0
-2020-10-04,Team_J,Team_A,3,2,2
-2020-10-04,Team_O,Team_F,0,2,0
-2020-10-04,Team_M,Team_P,2,5,0
-2020-10-06,Team_G,Team_N,4,4,1
-2020-10-08,Team_A,Team_G,3,2,2
-2020-10-08,Team_A,Team_G,3,5,0
-2020-10-10,Team_F,Team_L,2,3,0
-2020-10-12,Team_J,Team_H,2,5,0
-2020-10-13,Team_C,Team_R,5,2,2
-2020-10-13,Team_H,Team_J,5,0,2
-2020-10-15,Team_D,Team_B,2,3,0
-2020-10-16,Team_D,Team_B,0,4,0
-2020-10-18,Team_F,Team_G,1,4,0
-2020-10-20,Team_H,Team_P,5,2,2
-2020-10-20,Team_Q,Team_H,3,2,2
-2020-10-22,Team_G,Team_R,3,4,0
-2020-10-25,Team_H,Team_R,3,4,0
-2020-10-26,Team_J,Team_B,2,5,0
-2020-10-29,Team_H,Team_D,1,2,0
-2020-10-29,Team_I,Team_L,5,0,2
-2020-11-02,Team_E,Team_D,0,4,0
-2020-11-09,Team_G,Team_A,2,3,0
-2020-11-09,Team_O,Team_L,3,5,0
-2020-11-09,Team_L,Team_F,4,4,1
-2020-11-09,Team_F,Team_O,4,0,2
-2020-11-10,Team_A,Team_P,5,2,2
-2020-11-11,Team_N,Team_M,0,3,0
-2020-11-12,Team_N,Team_D,3,4,0
-2020-11-18,Team_L,Team_J,5,2,2
-2020-11-18,Team_B,Team_R,0,1,0
-2020-11-19,Team_O,Team_A,5,5,1
-2020-11-25,Team_C,Team_D,2,4,0
-2020-12-03,Team_M,Team_A,1,1,1
-2020-12-03,Team_F,Team_L,5,1,2
-2020-12-03,Team_M,Team_A,3,2,2
-2020-12-03,Team_N,Team_F,0,0,1
-2020-12-06,Team_N,Team_Q,3,2,2
-2020-12-07,Team_D,Team_F,5,5,1
-2020-12-08,Team_G,Team_H,1,0,2
-2020-12-08,Team_N,Team_I,3,2,2
-2020-12-09,Team_C,Team_L,3,0,2
-2020-12-10,Team_N,Team_M,3,0,2
-2020-12-11,Team_E,Team_G,5,4,2
-2020-12-12,Team_D,Team_M,5,5,1
-2020-12-13,Team_C,Team_K,4,5,0
-2020-12-13,Team_M,Team_F,1,2,0
-2020-12-15,Team_Q,Team_M,1,5,0
-2020-12-19,Team_O,Team_C,5,2,2
-2020-12-21,Team_R,Team_C,1,0,2
-2020-12-22,Team_J,Team_N,4,0,2
-2020-12-24,Team_P,Team_R,5,3,2
-2020-12-25,Team_C,Team_J,1,4,0
-2020-12-25,Team_M,Team_J,5,5,1
-2020-12-26,Team_B,Team_N,3,1,2
-2020-12-26,Team_Q,Team_O,0,4,0
-2020-12-28,Team_K,Team_B,0,3,0
-2020-12-28,Team_P,Team_O,4,4,1
-2020-12-29,Team_K,Team_B,0,1,0
-2020-12-29,Team_P,Team_L,2,1,2
-2021-01-02,Team_J,Team_A,5,4,2
-2021-01-04,Team_C,Team_Q,2,5,0
-2021-01-05,Team_J,Team_D,3,1,2
-2021-01-06,Team_E,Team_N,0,1,0
-2021-01-09,Team_D,Team_N,3,3,1
-2021-01-09,Team_L,Team_E,4,3,2
-2021-01-11,Team_R,Team_P,1,1,1
-2021-01-16,Team_A,Team_L,2,4,0
-2021-01-16,Team_N,Team_M,0,5,0
-2021-01-17,Team_F,Team_R,0,3,0
-2021-01-17,Team_O,Team_B,2,3,0
-2021-01-17,Team_P,Team_Q,2,4,0
-2021-01-18,Team_I,Team_J,3,1,2
-2021-01-18,Team_C,Team_R,2,0,2
-2021-01-18,Team_N,Team_P,4,4,1
-2021-01-19,Team_D,Team_N,1,3,0
-2021-01-19,Team_Q,Team_L,4,3,2
-2021-01-20,Team_K,Team_Q,4,1,2
-2021-01-24,Team_I,Team_B,5,3,2
-2021-01-24,Team_D,Team_E,5,3,2
-2021-01-25,Team_B,Team_J,3,5,0
-2021-01-25,Team_K,Team_D,3,0,2
-2021-01-27,Team_N,Team_M,5,5,1
-2021-01-28,Team_H,Team_E,1,0,2
-2021-01-28,Team_H,Team_J,4,2,2
-2021-02-01,Team_L,Team_M,5,5,1
-2021-02-01,Team_L,Team_P,3,2,2
-2021-02-04,Team_R,Team_H,1,0,2
-2021-02-05,Team_K,Team_H,3,4,0
-2021-02-06,Team_R,Team_I,1,5,0
-2021-02-06,Team_I,Team_C,5,0,2
-2021-02-08,Team_P,Team_K,2,1,2
-2021-02-08,Team_F,Team_E,5,0,2
-2021-02-10,Team_C,Team_I,0,5,0
-2021-02-12,Team_E,Team_J,0,5,0
-2021-02-12,Team_O,Team_L,2,1,2
-2021-02-13,Team_D,Team_F,0,3,0
-2021-02-13,Team_R,Team_F,5,4,2
-2021-02-14,Team_J,Team_K,5,4,2
-2021-02-16,Team_B,Team_H,0,2,0
-2021-02-17,Team_L,Team_O,2,1,2
-2021-02-27,Team_G,Team_B,4,2,2
-2021-02-27,Team_F,Team_K,0,3,0
-2021-02-27,Team_N,Team_M,4,5,0
-2021-02-28,Team_G,Team_I,2,1,2
-2021-03-06,Team_H,Team_D,2,4,0
-2021-03-07,Team_K,Team_G,5,5,1
-2021-03-07,Team_G,Team_O,0,1,0
-2021-03-08,Team_I,Team_C,1,1,1
-2021-03-12,Team_E,Team_O,4,5,0
-2021-03-12,Team_Q,Team_I,1,2,0
-2021-03-16,Team_M,Team_O,3,2,2
-2021-03-20,Team_O,Team_P,1,2,0
-2021-03-21,Team_B,Team_C,5,2,2
-2021-03-22,Team_C,Team_B,3,2,2
-2021-03-23,Team_Q,Team_P,4,5,0
-2021-03-24,Team_A,Team_R,3,0,2
-2021-03-26,Team_E,Team_N,4,2,2
-2021-03-30,Team_O,Team_L,0,3,0
-2021-03-31,Team_R,Team_P,5,2,2
-2021-03-31,Team_E,Team_H,3,2,2
-2021-04-01,Team_A,Team_H,3,2,2
-2021-04-01,Team_R,Team_M,3,1,2
-2021-04-01,Team_O,Team_K,4,4,1
-2021-04-01,Team_A,Team_B,2,3,0
-2021-04-04,Team_D,Team_M,4,2,2
-2021-04-05,Team_J,Team_K,5,1,2
-2021-04-05,Team_E,Team_J,1,0,2
-2021-04-06,Team_G,Team_J,5,3,2
-2021-04-13,Team_M,Team_C,5,0,2
-2021-04-15,Team_G,Team_Q,2,0,2
-2021-04-15,Team_H,Team_P,2,1,2
-2021-04-19,Team_J,Team_K,5,3,2
-2021-04-20,Team_R,Team_B,1,3,0
-2021-04-21,Team_F,Team_D,1,5,0
-2021-04-23,Team_C,Team_H,1,4,0
-2021-04-25,Team_J,Team_H,5,0,2
-2021-04-25,Team_I,Team_L,2,4,0
-2021-04-27,Team_O,Team_I,2,2,1
-2021-04-28,Team_L,Team_M,3,4,0
-2021-04-30,Team_G,Team_M,5,4,2
-2021-05-01,Team_J,Team_D,0,1,0
-2021-05-02,Team_N,Team_Q,0,1,0
-2021-05-03,Team_B,Team_I,0,3,0
-2021-05-04,Team_M,Team_H,3,0,2
-2021-05-05,Team_F,Team_K,4,0,2
-2021-05-07,Team_B,Team_N,5,2,2
-2021-05-07,Team_P,Team_Q,3,0,2
-2021-05-08,Team_K,Team_I,0,4,0
-2021-05-08,Team_G,Team_M,0,0,1
-2021-05-08,Team_I,Team_B,1,4,0
-2021-05-08,Team_P,Team_C,4,0,2
-2021-05-10,Team_L,Team_Q,4,3,2
-2021-05-11,Team_B,Team_E,1,0,2
-2021-05-11,Team_O,Team_L,4,3,2
-2021-05-12,Team_I,Team_G,2,5,0
-2021-05-13,Team_J,Team_M,3,4,0
-2021-05-13,Team_E,Team_H,0,4,0
-2021-05-13,Team_H,Team_K,5,0,2
-2021-05-16,Team_H,Team_E,5,0,2
-2021-05-16,Team_F,Team_P,3,2,2
-2021-05-18,Team_P,Team_K,2,3,0
-2021-05-19,Team_C,Team_D,2,1,2
-2021-05-23,Team_N,Team_K,2,0,2
-2021-05-23,Team_R,Team_J,5,0,2
-2021-05-24,Team_P,Team_L,5,5,1
-2021-05-25,Team_B,Team_P,0,2,0
-2021-05-25,Team_D,Team_P,1,3,0
-2021-05-29,Team_G,Team_P,1,5,0
-2021-05-29,Team_H,Team_D,5,1,2
-2021-05-30,Team_R,Team_C,4,1,2
-2021-05-31,Team_K,Team_D,3,4,0
-2021-06-01,Team_G,Team_D,1,5,0
-2021-06-02,Team_B,Team_H,2,2,1
-2021-06-06,Team_L,Team_E,5,3,2
-2021-06-07,Team_J,Team_L,0,0,1
-2021-06-08,Team_L,Team_F,4,4,1
-2021-06-10,Team_P,Team_J,5,2,2
-2021-06-13,Team_N,Team_M,3,5,0
-2021-06-13,Team_R,Team_F,5,2,2
-2021-06-13,Team_K,Team_I,4,5,0
-2021-06-13,Team_C,Team_K,0,3,0
-2021-06-18,Team_F,Team_J,0,0,1
-2021-06-19,Team_K,Team_A,5,5,1
-2021-06-21,Team_P,Team_R,5,2,2
-2021-06-22,Team_L,Team_C,3,0,2
-2021-06-23,Team_Q,Team_F,4,0,2
-2021-06-24,Team_O,Team_B,0,1,0
-2021-06-24,Team_Q,Team_P,2,0,2
-2021-06-26,Team_D,Team_C,1,5,0
-2021-06-27,Team_G,Team_I,5,0,2
-2021-06-30,Team_C,Team_O,0,3,0
-2021-06-30,Team_K,Team_D,2,3,0
-2021-07-01,Team_A,Team_K,5,2,2
-2021-07-02,Team_C,Team_H,4,5,0
-2021-07-03,Team_K,Team_J,2,4,0
-2021-07-04,Team_L,Team_A,2,2,1
-2021-07-10,Team_M,Team_Q,3,5,0
-2021-07-13,Team_O,Team_Q,1,2,0
-2021-07-14,Team_G,Team_F,4,1,2
-2021-07-16,Team_H,Team_K,1,3,0
-2021-07-16,Team_B,Team_M,4,0,2
-2021-07-16,Team_O,Team_C,5,2,2
-2021-07-17,Team_B,Team_G,5,5,1
-2021-07-18,Team_M,Team_E,4,4,1
-2021-07-18,Team_G,Team_D,0,5,0
-2021-07-19,Team_G,Team_D,3,0,2
-2021-07-19,Team_Q,Team_O,0,5,0
-2021-07-19,Team_R,Team_A,4,1,2
-2021-07-21,Team_Q,Team_P,5,1,2
-2021-07-23,Team_F,Team_O,5,3,2
-2021-07-23,Team_O,Team_L,1,2,0
-2021-07-24,Team_C,Team_J,2,5,0
-2021-07-24,Team_O,Team_H,0,3,0
-2021-07-24,Team_P,Team_G,4,1,2
-2021-07-25,Team_O,Team_H,3,4,0
-2021-07-28,Team_M,Team_L,0,4,0
-2021-07-30,Team_P,Team_Q,2,4,0
-2021-08-02,Team_A,Team_R,2,4,0
-2021-08-07,Team_B,Team_D,5,4,2
-2021-08-09,Team_I,Team_E,0,5,0
-2021-08-12,Team_B,Team_N,3,3,1
-2021-08-12,Team_J,Team_M,0,4,0
-2021-08-14,Team_C,Team_N,4,3,2
-2021-08-15,Team_C,Team_I,0,3,0
-2021-08-15,Team_B,Team_A,2,4,0
-2021-08-16,Team_J,Team_Q,1,5,0
-2021-08-17,Team_J,Team_F,5,5,1
-2021-08-18,Team_E,Team_P,4,4,1
-2021-08-20,Team_Q,Team_I,3,3,1
-2021-08-21,Team_E,Team_Q,0,0,1
-2021-08-22,Team_J,Team_I,4,5,0
-2021-08-25,Team_O,Team_F,5,0,2
-2021-08-25,Team_O,Team_E,1,3,0
-2021-08-26,Team_E,Team_G,5,0,2
-2021-08-27,Team_G,Team_B,2,3,0
-2021-08-28,Team_I,Team_O,3,3,1
-2021-08-28,Team_D,Team_R,4,5,0
-2021-09-01,Team_H,Team_D,0,3,0
-2021-09-02,Team_J,Team_P,5,4,2
-2021-09-03,Team_M,Team_O,4,5,0
-2021-09-04,Team_K,Team_R,4,4,1
-2021-09-07,Team_Q,Team_J,5,3,2
-2021-09-07,Team_E,Team_P,0,4,0
-2021-09-08,Team_I,Team_Q,1,0,2
-2021-09-09,Team_D,Team_B,2,4,0
-2021-09-09,Team_C,Team_K,3,3,1
-2021-09-10,Team_Q,Team_M,4,0,2
-2021-09-12,Team_R,Team_C,4,5,0
-2021-09-14,Team_C,Team_I,0,4,0
-2021-09-14,Team_J,Team_G,3,4,0
-2021-09-15,Team_B,Team_H,2,1,2
-2021-09-17,Team_H,Team_O,5,0,2
-2021-09-20,Team_N,Team_K,2,2,1
-2021-09-24,Team_F,Team_H,2,3,0
-2021-09-26,Team_C,Team_R,1,1,1
-2021-09-27,Team_H,Team_G,1,0,2
-2021-09-27,Team_Q,Team_M,4,3,2
-2021-09-27,Team_K,Team_H,2,1,2
-2021-09-27,Team_O,Team_P,0,0,1
-2021-09-28,Team_I,Team_Q,5,5,1
-2021-10-02,Team_K,Team_M,3,1,2
-2021-10-03,Team_D,Team_I,2,0,2
-2021-10-03,Team_H,Team_I,5,5,1
-2021-10-04,Team_R,Team_G,1,1,1
-2021-10-04,Team_F,Team_P,4,2,2
-2021-10-06,Team_G,Team_Q,3,5,0
-2021-10-08,Team_D,Team_G,1,1,1
-2021-10-13,Team_H,Team_D,3,1,2
-2021-10-13,Team_P,Team_M,3,5,0
-2021-10-14,Team_F,Team_N,4,5,0
-2021-10-14,Team_D,Team_L,1,1,1
-2021-10-19,Team_D,Team_G,2,3,0
-2021-10-20,Team_J,Team_N,3,4,0
-2021-10-24,Team_H,Team_A,2,3,0
-2021-10-26,Team_M,Team_A,2,3,0
-2021-10-27,Team_F,Team_P,5,2,2
-2021-10-27,Team_F,Team_Q,1,2,0
-2021-10-27,Team_I,Team_J,5,5,1
-2021-10-30,Team_M,Team_J,4,1,2
-2021-11-01,Team_C,Team_P,0,2,0
-2021-11-03,Team_J,Team_E,4,4,1
-2021-11-08,Team_L,Team_P,2,2,1
-2021-11-08,Team_F,Team_P,5,2,2
-2021-11-09,Team_D,Team_O,4,2,2
-2021-11-09,Team_G,Team_H,3,5,0
-2021-11-09,Team_C,Team_I,2,2,1
-2021-11-10,Team_D,Team_B,3,0,2
-2021-11-10,Team_G,Team_E,2,5,0
-2021-11-12,Team_J,Team_A,1,1,1
-2021-11-13,Team_P,Team_R,3,1,2
-2021-11-14,Team_E,Team_J,1,5,0
-2021-11-20,Team_J,Team_L,1,1,1
-2021-11-20,Team_D,Team_C,3,0,2
-2021-11-22,Team_M,Team_I,3,2,2
-2021-11-24,Team_M,Team_C,2,5,0
-2021-11-25,Team_D,Team_I,1,1,1
-2021-11-28,Team_F,Team_B,2,3,0
-2021-11-28,Team_M,Team_K,0,5,0
-2021-11-29,Team_A,Team_O,3,0,2
-2021-12-03,Team_O,Team_G,4,3,2
-2021-12-05,Team_G,Team_O,5,4,2
-2021-12-05,Team_R,Team_N,4,1,2
-2021-12-06,Team_J,Team_E,0,3,0
-2021-12-07,Team_N,Team_D,2,5,0
-2021-12-08,Team_J,Team_O,5,2,2
-2021-12-09,Team_Q,Team_J,0,2,0
-2021-12-13,Team_L,Team_P,4,1,2
-2021-12-14,Team_P,Team_D,3,5,0
-2021-12-15,Team_O,Team_I,1,3,0
-2021-12-18,Team_I,Team_D,5,0,2
-2021-12-20,Team_O,Team_B,5,2,2
-2021-12-22,Team_H,Team_G,4,2,2
-2021-12-22,Team_F,Team_E,5,4,2
-2021-12-22,Team_R,Team_K,5,1,2
-2021-12-25,Team_R,Team_C,4,4,1
-2021-12-26,Team_N,Team_O,3,5,0
-2021-12-26,Team_C,Team_N,5,0,2
-2021-12-28,Team_J,Team_R,2,5,0
-2021-12-28,Team_G,Team_J,5,5,1
-2022-01-01,Team_C,Team_M,1,5,0
-2022-01-02,Team_Q,Team_D,2,5,0
-2022-01-03,Team_G,Team_P,2,3,0
-2022-01-04,Team_J,Team_Q,4,0,2
-2022-01-04,Team_A,Team_F,3,3,1
-2022-01-05,Team_L,Team_I,0,5,0
-2022-01-05,Team_P,Team_Q,2,4,0
-2022-01-07,Team_I,Team_D,1,0,2
-2022-01-07,Team_B,Team_Q,4,1,2
-2022-01-08,Team_A,Team_O,0,2,0
-2022-01-09,Team_K,Team_E,3,4,0
-2022-01-13,Team_J,Team_H,0,1,0
-2022-01-16,Team_K,Team_O,1,0,2
-2022-01-16,Team_H,Team_P,4,2,2
-2022-01-17,Team_E,Team_C,2,2,1
-2022-01-19,Team_Q,Team_R,2,1,2
-2022-01-19,Team_K,Team_G,3,0,2
-2022-01-19,Team_M,Team_L,0,3,0
-2022-01-19,Team_M,Team_H,4,5,0
-2022-01-22,Team_H,Team_I,1,3,0
-2022-01-23,Team_F,Team_J,0,4,0
-2022-01-25,Team_J,Team_C,5,0,2
-2022-01-26,Team_R,Team_E,3,1,2
-2022-01-28,Team_Q,Team_D,2,1,2
-2022-02-03,Team_A,Team_L,4,1,2
-2022-02-07,Team_O,Team_C,5,0,2
-2022-02-09,Team_J,Team_D,1,4,0
-2022-02-11,Team_O,Team_K,1,5,0
-2022-02-11,Team_R,Team_P,0,5,0
-2022-02-12,Team_M,Team_C,5,5,1
-2022-02-15,Team_K,Team_G,3,2,2
-2022-02-17,Team_E,Team_N,2,2,1
-2022-02-20,Team_D,Team_N,2,4,0
-2022-02-21,Team_Q,Team_R,3,1,2
-2022-02-22,Team_E,Team_F,0,4,0
-2022-02-22,Team_N,Team_F,2,1,2
-2022-02-23,Team_P,Team_Q,0,1,0
-2022-02-23,Team_E,Team_O,1,5,0
-2022-02-24,Team_A,Team_C,4,1,2
-2022-02-24,Team_G,Team_R,5,1,2
-2022-02-25,Team_P,Team_M,1,1,1
-2022-02-27,Team_M,Team_P,4,2,2
-2022-03-01,Team_C,Team_M,1,0,2
-2022-03-03,Team_L,Team_I,5,0,2
-2022-03-04,Team_N,Team_K,5,4,2
-2022-03-04,Team_F,Team_M,3,2,2
-2022-03-05,Team_C,Team_I,4,4,1
-2022-03-06,Team_L,Team_F,1,1,1
-2022-03-07,Team_A,Team_H,1,2,0
-2022-03-12,Team_O,Team_R,1,2,0
-2022-03-15,Team_K,Team_L,3,2,2
-2022-03-17,Team_L,Team_K,4,2,2
-2022-03-18,Team_C,Team_B,3,5,0
-2022-03-20,Team_A,Team_Q,1,4,0
-2022-03-21,Team_I,Team_A,4,5,0
-2022-03-25,Team_G,Team_O,1,3,0
-2022-03-26,Team_K,Team_J,5,5,1
-2022-03-26,Team_K,Team_I,1,0,2
-2022-03-31,Team_D,Team_G,1,3,0
-2022-04-01,Team_C,Team_P,2,2,1
-2022-04-03,Team_O,Team_H,4,1,2
-2022-04-03,Team_C,Team_F,2,0,2
-2022-04-05,Team_Q,Team_I,5,2,2
-2022-04-06,Team_C,Team_M,1,1,1
-2022-04-08,Team_N,Team_K,0,3,0
-2022-04-08,Team_O,Team_H,0,3,0
-2022-04-09,Team_G,Team_B,4,2,2
-2022-04-10,Team_N,Team_R,2,0,2
-2022-04-11,Team_J,Team_P,0,5,0
-2022-04-12,Team_E,Team_I,1,1,1
-2022-04-13,Team_P,Team_R,2,0,2
-2022-04-14,Team_K,Team_P,3,0,2
-2022-04-15,Team_I,Team_B,5,2,2
-2022-04-16,Team_O,Team_Q,2,0,2
-2022-04-18,Team_O,Team_E,2,5,0
-2022-04-18,Team_D,Team_J,4,1,2
-2022-04-19,Team_E,Team_C,3,2,2
-2022-04-19,Team_A,Team_I,4,2,2
-2022-04-21,Team_L,Team_O,5,0,2
-2022-04-23,Team_H,Team_J,1,5,0
-2022-04-24,Team_A,Team_G,5,2,2
-2022-04-25,Team_N,Team_R,1,3,0
-2022-04-26,Team_K,Team_Q,0,5,0
-2022-04-27,Team_K,Team_P,3,3,1
-2022-04-27,Team_B,Team_I,5,1,2
-2022-04-28,Team_I,Team_G,4,0,2
-2022-04-30,Team_F,Team_H,1,4,0
-2022-05-01,Team_O,Team_Q,1,0,2
-2022-05-02,Team_H,Team_R,3,3,1
-2022-05-02,Team_N,Team_E,2,3,0
-2022-05-05,Team_J,Team_D,3,0,2
-2022-05-06,Team_E,Team_N,3,1,2
-2022-05-07,Team_H,Team_J,3,2,2
-2022-05-08,Team_A,Team_I,1,0,2
-2022-05-08,Team_Q,Team_K,2,1,2
-2022-05-09,Team_O,Team_C,0,3,0
-2022-05-11,Team_L,Team_F,3,0,2
-2022-05-15,Team_K,Team_I,1,1,1
-2022-05-17,Team_C,Team_O,1,5,0
-2022-05-17,Team_Q,Team_L,0,2,0
-2022-05-22,Team_D,Team_E,0,0,1
-2022-05-23,Team_D,Team_Q,5,3,2
-2022-05-24,Team_R,Team_P,0,2,0
-2022-05-27,Team_M,Team_L,1,1,1
-2022-05-27,Team_L,Team_C,4,5,0
-2022-05-29,Team_I,Team_R,0,2,0
-2022-05-31,Team_E,Team_K,2,4,0
-2022-05-31,Team_D,Team_E,5,5,1
-2022-06-06,Team_L,Team_P,5,1,2
-2022-06-07,Team_D,Team_E,3,1,2
-2022-06-10,Team_F,Team_R,5,2,2
-2022-06-11,Team_P,Team_A,3,2,2
-2022-06-12,Team_Q,Team_D,3,4,0
-2022-06-12,Team_A,Team_P,0,2,0
-2022-06-13,Team_M,Team_P,3,2,2
-2022-06-13,Team_P,Team_K,1,5,0
-2022-06-16,Team_R,Team_J,4,5,0
-2022-06-22,Team_K,Team_O,1,3,0
-2022-06-22,Team_R,Team_G,3,0,2
-2022-06-23,Team_D,Team_H,5,4,2
-2022-06-23,Team_R,Team_N,4,0,2
-2022-06-25,Team_J,Team_O,2,4,0
-2022-06-25,Team_G,Team_C,0,1,0
-2022-06-26,Team_K,Team_I,5,3,2
-2022-06-28,Team_C,Team_F,4,2,2
-2022-06-30,Team_A,Team_B,5,2,2
-2022-07-02,Team_G,Team_K,5,3,2
-2022-07-08,Team_K,Team_L,1,3,0
-2022-07-08,Team_H,Team_I,2,3,0
-2022-07-09,Team_Q,Team_E,3,0,2
-2022-07-10,Team_O,Team_R,2,1,2
-2022-07-12,Team_B,Team_M,0,3,0
-2022-07-17,Team_E,Team_R,3,3,1
-2022-07-20,Team_J,Team_O,5,5,1
-2022-07-20,Team_P,Team_K,4,0,2
-2022-07-21,Team_N,Team_G,5,5,1
-2022-07-24,Team_J,Team_G,3,3,1
-2022-07-28,Team_E,Team_J,1,1,1
-2022-07-29,Team_R,Team_D,3,0,2
-2022-07-30,Team_I,Team_A,3,2,2
-2022-08-03,Team_D,Team_F,3,5,0
-2022-08-04,Team_H,Team_N,5,1,2
-2022-08-09,Team_G,Team_L,4,1,2
-2022-08-10,Team_I,Team_H,2,4,0
-2022-08-11,Team_J,Team_F,3,5,0
-2022-08-12,Team_K,Team_O,0,4,0
-2022-08-13,Team_E,Team_B,1,2,0
-2022-08-13,Team_D,Team_J,3,1,2
-2022-08-19,Team_K,Team_G,2,2,1
-2022-08-23,Team_B,Team_F,4,1,2
-2022-08-24,Team_L,Team_N,1,1,1
-2022-08-25,Team_H,Team_P,4,1,2
-2022-08-30,Team_O,Team_I,1,5,0
-2022-08-31,Team_R,Team_F,2,4,0
-2022-09-01,Team_P,Team_G,2,2,1
-2022-09-07,Team_Q,Team_N,3,4,0
-2022-09-08,Team_G,Team_H,4,2,2
-2022-09-10,Team_N,Team_J,3,0,2
-2022-09-11,Team_L,Team_D,5,4,2
-2022-09-11,Team_K,Team_H,0,0,1
-2022-09-13,Team_C,Team_L,2,5,0
-2022-09-15,Team_O,Team_F,4,3,2
-2022-09-18,Team_I,Team_R,4,2,2
-2022-09-18,Team_C,Team_M,2,1,2
-2022-09-18,Team_L,Team_K,4,4,1
-2022-09-19,Team_D,Team_A,5,4,2
-2022-09-21,Team_P,Team_G,3,0,2
-2022-09-23,Team_R,Team_F,4,1,2
-2022-09-26,Team_R,Team_B,4,0,2
-2022-09-27,Team_F,Team_B,4,0,2
-2022-09-28,Team_C,Team_R,3,0,2
-2022-09-29,Team_E,Team_J,5,3,2
-2022-09-29,Team_J,Team_E,1,2,0
-2022-09-29,Team_C,Team_F,4,3,2
-2022-09-30,Team_J,Team_Q,0,2,0
-2022-10-05,Team_R,Team_J,1,3,0
-2022-10-05,Team_D,Team_E,1,4,0
-2022-10-08,Team_E,Team_C,4,0,2
-2022-10-12,Team_F,Team_C,3,2,2
-2022-10-15,Team_A,Team_E,3,3,1
-2022-10-15,Team_N,Team_F,1,3,0
-2022-10-16,Team_G,Team_H,2,4,0
-2022-10-25,Team_K,Team_N,2,1,2
-2022-10-25,Team_K,Team_D,3,0,2
-2022-10-26,Team_J,Team_D,5,2,2
-2022-10-27,Team_J,Team_F,0,0,1
-2022-10-29,Team_O,Team_I,1,0,2
-2022-10-30,Team_N,Team_P,1,5,0
-2022-10-31,Team_F,Team_O,4,4,1
-2022-10-31,Team_A,Team_H,5,5,1
-2022-10-31,Team_M,Team_D,5,0,2
-2022-11-03,Team_M,Team_E,4,4,1
-2022-11-04,Team_J,Team_F,5,4,2
-2022-11-05,Team_G,Team_E,5,3,2
-2022-11-07,Team_F,Team_G,5,1,2
-2022-11-07,Team_O,Team_Q,0,2,0
-2022-11-09,Team_P,Team_C,0,0,1
-2022-11-09,Team_M,Team_K,0,0,1
-2022-11-09,Team_G,Team_N,2,5,0
-2022-11-15,Team_N,Team_D,0,0,1
-2022-11-16,Team_P,Team_O,0,5,0
-2022-11-17,Team_A,Team_B,3,1,2
-2022-11-20,Team_O,Team_Q,2,3,0
-2022-11-21,Team_F,Team_C,2,5,0
-2022-11-24,Team_E,Team_D,3,1,2
-2022-11-28,Team_R,Team_H,3,2,2
-2022-11-30,Team_N,Team_L,3,5,0
-2022-12-06,Team_D,Team_A,3,1,2
-2022-12-07,Team_Q,Team_I,1,2,0
-2022-12-09,Team_E,Team_I,1,4,0
-2022-12-10,Team_H,Team_L,4,4,1
-2022-12-12,Team_H,Team_F,4,0,2
-2022-12-12,Team_H,Team_A,3,5,0
-2022-12-13,Team_O,Team_A,5,1,2
-2022-12-13,Team_R,Team_Q,4,4,1
-2022-12-14,Team_I,Team_M,2,3,0
-2022-12-14,Team_B,Team_L,4,1,2
-2022-12-19,Team_A,Team_K,5,0,2
-2022-12-20,Team_I,Team_K,0,4,0
-2022-12-22,Team_J,Team_P,4,4,1
-2022-12-22,Team_B,Team_O,4,3,2
-2022-12-23,Team_H,Team_I,0,0,1
-2022-12-23,Team_L,Team_O,5,4,2
-2022-12-25,Team_R,Team_N,0,0,1
-2022-12-26,Team_H,Team_R,4,5,0
-2022-12-26,Team_I,Team_F,2,5,0
-2022-12-28,Team_M,Team_K,5,5,1
-2023-01-01,Team_P,Team_H,3,2,2
-2023-01-03,Team_K,Team_N,4,5,0
-2023-01-03,Team_O,Team_E,3,1,2
-2023-01-04,Team_E,Team_G,2,4,0
-2023-01-04,Team_C,Team_E,1,5,0
-2023-01-05,Team_M,Team_R,1,5,0
-2023-01-06,Team_N,Team_C,5,5,1
-2023-01-09,Team_E,Team_M,0,1,0
-2023-01-10,Team_P,Team_O,0,4,0
-2023-01-11,Team_I,Team_F,0,5,0
-2023-01-18,Team_R,Team_P,5,1,2
-2023-01-23,Team_M,Team_D,3,4,0
-2023-01-23,Team_L,Team_I,4,3,2
-2023-01-23,Team_H,Team_Q,1,2,0
-2023-01-28,Team_Q,Team_N,0,2,0
-2023-01-29,Team_P,Team_G,1,5,0
-2023-01-29,Team_E,Team_K,3,5,0
-2023-01-31,Team_L,Team_C,5,2,2
-2023-01-31,Team_I,Team_D,1,0,2
-2023-01-31,Team_B,Team_P,0,2,0
-2023-02-01,Team_D,Team_B,5,4,2
-2023-02-01,Team_P,Team_B,0,2,0
-2023-02-03,Team_G,Team_O,3,1,2
-2023-02-03,Team_F,Team_E,3,4,0
-2023-02-04,Team_J,Team_M,4,1,2
-2023-02-04,Team_F,Team_L,4,3,2
-2023-02-05,Team_N,Team_C,1,0,2
-2023-02-06,Team_M,Team_O,1,5,0
-2023-02-07,Team_B,Team_N,4,3,2
-2023-02-07,Team_A,Team_E,5,4,2
-2023-02-07,Team_E,Team_J,2,4,0
-2023-02-08,Team_R,Team_I,5,2,2
-2023-02-09,Team_B,Team_P,4,5,0
-2023-02-12,Team_P,Team_E,1,2,0
-2023-02-16,Team_M,Team_J,2,5,0
-2023-02-21,Team_I,Team_K,0,4,0
-2023-02-22,Team_K,Team_Q,4,3,2
-2023-02-23,Team_R,Team_I,5,4,2
-2023-02-23,Team_M,Team_H,4,5,0
-2023-02-23,Team_K,Team_H,5,0,2
-2023-02-24,Team_L,Team_H,5,4,2
-2023-02-24,Team_D,Team_J,2,5,0
-2023-02-25,Team_I,Team_E,0,4,0
-2023-02-27,Team_A,Team_G,3,2,2
-2023-02-28,Team_B,Team_P,5,2,2
-2023-03-01,Team_A,Team_D,5,3,2
-2023-03-03,Team_A,Team_I,2,0,2
-2023-03-04,Team_P,Team_R,0,4,0
-2023-03-06,Team_M,Team_K,3,5,0
-2023-03-07,Team_B,Team_P,5,4,2
-2023-03-07,Team_C,Team_D,5,3,2
-2023-03-08,Team_C,Team_B,1,1,1
-2023-03-11,Team_J,Team_P,0,3,0
-2023-03-12,Team_H,Team_B,4,0,2
-2023-03-15,Team_P,Team_H,3,3,1
-2023-03-16,Team_R,Team_P,1,0,2
-2023-03-16,Team_L,Team_D,4,5,0
-2023-03-21,Team_J,Team_Q,3,3,1
-2023-03-23,Team_H,Team_E,2,3,0
-2023-03-23,Team_J,Team_K,0,5,0
-2023-03-25,Team_N,Team_M,5,5,1
-2023-03-25,Team_K,Team_L,1,2,0
-2023-03-27,Team_B,Team_F,1,4,0
-2023-03-29,Team_E,Team_Q,2,5,0
-2023-03-29,Team_K,Team_G,1,3,0
-2023-03-30,Team_H,Team_B,4,3,2
-2023-04-07,Team_A,Team_J,5,2,2
-2023-04-13,Team_R,Team_K,3,4,0
-2023-04-14,Team_J,Team_P,0,3,0
-2023-04-14,Team_M,Team_C,4,2,2
-2023-04-16,Team_H,Team_I,0,5,0
-2023-04-16,Team_R,Team_K,5,0,2
-2023-04-16,Team_E,Team_D,4,2,2
-2023-04-17,Team_A,Team_J,4,0,2
-2023-04-17,Team_P,Team_E,3,4,0
-2023-04-20,Team_K,Team_A,1,2,0
-2023-04-21,Team_M,Team_R,0,3,0
-2023-04-21,Team_Q,Team_E,3,0,2
-2023-04-21,Team_I,Team_A,1,5,0
-2023-04-28,Team_I,Team_L,1,0,2
-2023-04-28,Team_K,Team_M,4,0,2
-2023-04-30,Team_D,Team_P,4,1,2
-2023-05-01,Team_J,Team_K,5,0,2
-2023-05-05,Team_A,Team_J,1,1,1
-2023-05-05,Team_C,Team_R,3,4,0
-2023-05-06,Team_Q,Team_K,3,5,0
-2023-05-06,Team_M,Team_C,2,1,2
-2023-05-06,Team_N,Team_L,5,2,2
-2023-05-07,Team_R,Team_A,5,4,2
-2023-05-07,Team_B,Team_K,3,4,0
-2023-05-07,Team_M,Team_N,4,0,2
-2023-05-08,Team_M,Team_E,1,1,1
-2023-05-09,Team_P,Team_M,4,4,1
-2023-05-13,Team_P,Team_L,5,3,2
-2023-05-18,Team_F,Team_K,2,0,2
-2023-05-18,Team_Q,Team_J,5,4,2
-2023-05-19,Team_N,Team_F,5,3,2
-2023-05-19,Team_D,Team_L,2,3,0
-2023-05-23,Team_C,Team_H,3,1,2
-2023-05-23,Team_B,Team_D,1,4,0
-2023-05-24,Team_K,Team_B,0,0,1
-2023-05-25,Team_E,Team_O,0,4,0
-2023-05-26,Team_Q,Team_E,2,4,0
-2023-05-27,Team_N,Team_G,4,5,0
-2023-05-27,Team_K,Team_P,3,3,1
-2023-05-30,Team_J,Team_I,3,3,1
-2023-06-02,Team_M,Team_H,3,4,0
-2023-06-02,Team_F,Team_M,2,2,1
-2023-06-03,Team_M,Team_K,0,3,0
-2023-06-10,Team_P,Team_A,3,5,0
-2023-06-11,Team_G,Team_P,4,3,2
-2023-06-13,Team_B,Team_R,2,3,0
-2023-06-13,Team_Q,Team_M,3,4,0
-2023-06-13,Team_N,Team_I,5,0,2
-2023-06-14,Team_N,Team_H,1,2,0
-2023-06-15,Team_R,Team_P,3,3,1
-2023-06-19,Team_D,Team_K,0,0,1
-2023-06-19,Team_B,Team_D,2,3,0
-2023-06-19,Team_A,Team_Q,5,4,2
-2023-06-20,Team_C,Team_B,5,0,2
-2023-06-21,Team_J,Team_R,4,1,2
-2023-06-24,Team_M,Team_K,3,2,2
-2023-06-25,Team_B,Team_E,1,5,0
-2023-06-27,Team_I,Team_C,2,2,1
-2023-06-27,Team_R,Team_A,4,5,0
-2023-06-28,Team_R,Team_A,3,4,0
-2023-06-30,Team_Q,Team_N,0,3,0
-2023-07-02,Team_J,Team_M,5,1,2
-2023-07-04,Team_O,Team_B,1,2,0
-2023-07-04,Team_P,Team_G,3,0,2
-2023-07-04,Team_J,Team_R,4,1,2
-2023-07-11,Team_Q,Team_N,3,5,0
-2023-07-15,Team_H,Team_C,5,1,2
-2023-07-19,Team_N,Team_F,4,1,2
-2023-07-20,Team_P,Team_H,2,3,0
-2023-07-20,Team_A,Team_D,5,4,2
-2023-07-20,Team_K,Team_C,1,5,0
-2023-07-20,Team_D,Team_P,3,5,0
-2023-07-21,Team_N,Team_M,3,3,1
-2023-07-22,Team_E,Team_K,5,5,1
-2023-07-25,Team_O,Team_J,5,3,2
-2023-07-26,Team_A,Team_L,0,5,0
-2023-07-28,Team_K,Team_D,2,4,0
-2023-08-02,Team_D,Team_A,5,2,2
-2023-08-03,Team_R,Team_H,5,2,2
-2023-08-05,Team_N,Team_I,2,1,2
-2023-08-06,Team_N,Team_L,3,3,1
-2023-08-06,Team_R,Team_Q,3,1,2
-2023-08-06,Team_M,Team_E,4,4,1
-2023-08-07,Team_P,Team_O,1,5,0
-2023-08-08,Team_H,Team_B,5,2,2
-2023-08-10,Team_A,Team_C,3,3,1
-2023-08-10,Team_M,Team_R,2,5,0
-2023-08-13,Team_K,Team_D,4,0,2
-2023-08-18,Team_F,Team_A,1,2,0
-2023-08-19,Team_L,Team_A,4,4,1
-2023-08-20,Team_C,Team_G,4,5,0
-2023-08-21,Team_L,Team_J,2,2,1
-2023-08-23,Team_C,Team_K,5,3,2
-2023-08-23,Team_L,Team_P,4,3,2
-2023-08-24,Team_J,Team_F,2,0,2
-2023-08-26,Team_H,Team_F,3,0,2
-2023-08-27,Team_J,Team_G,1,4,0
-2023-08-27,Team_G,Team_L,4,0,2
-2023-08-27,Team_B,Team_A,1,1,1
-2023-08-28,Team_E,Team_Q,0,1,0
-2023-08-30,Team_P,Team_N,5,3,2
-2023-08-31,Team_H,Team_K,0,3,0
-2023-08-31,Team_B,Team_D,3,3,1
-2023-09-02,Team_O,Team_K,2,0,2
-2023-09-02,Team_L,Team_I,0,2,0
-2023-09-02,Team_C,Team_I,2,1,2
-2023-09-05,Team_A,Team_E,3,1,2
-2023-09-05,Team_E,Team_F,1,1,1
-2023-09-06,Team_E,Team_L,0,4,0
-2023-09-07,Team_D,Team_L,1,0,2
-2023-09-09,Team_F,Team_D,0,5,0
-2023-09-10,Team_J,Team_G,4,4,1
-2023-09-15,Team_I,Team_C,5,4,2
-2023-09-16,Team_G,Team_O,0,4,0
-2023-09-17,Team_P,Team_G,0,0,1
-2023-09-17,Team_N,Team_Q,4,3,2
-2023-09-17,Team_D,Team_R,2,4,0
-2023-09-19,Team_G,Team_A,0,2,0
-2023-09-19,Team_H,Team_F,4,1,2
-2023-09-20,Team_K,Team_L,2,2,1
-2023-09-21,Team_E,Team_M,2,5,0
-2023-09-22,Team_F,Team_B,3,5,0
-2023-09-23,Team_L,Team_F,5,4,2
-2023-09-29,Team_Q,Team_K,3,4,0
-2023-09-29,Team_L,Team_C,4,4,1
-2023-10-01,Team_M,Team_F,3,1,2
-2023-10-03,Team_K,Team_H,2,3,0
-2023-10-03,Team_D,Team_H,3,5,0
-2023-10-06,Team_H,Team_D,2,4,0
-2023-10-07,Team_R,Team_G,3,1,2
-2023-10-07,Team_C,Team_E,4,5,0
-2023-10-09,Team_I,Team_N,5,2,2
-2023-10-10,Team_D,Team_A,5,5,1
-2023-10-11,Team_J,Team_C,5,1,2
-2023-10-11,Team_R,Team_N,4,3,2
-2023-10-12,Team_D,Team_I,5,4,2
-2023-10-13,Team_G,Team_F,4,5,0
-2023-10-15,Team_G,Team_R,3,5,0
-2023-10-17,Team_R,Team_M,3,2,2
-2023-10-17,Team_M,Team_L,0,3,0
-2023-10-17,Team_R,Team_C,4,3,2
-2023-10-19,Team_R,Team_F,0,3,0
-2023-10-20,Team_O,Team_B,1,0,2
-2023-10-20,Team_E,Team_D,5,5,1
-2023-10-21,Team_P,Team_R,5,2,2
-2023-10-23,Team_K,Team_Q,3,3,1
-2023-10-23,Team_F,Team_A,1,4,0
-2023-10-26,Team_E,Team_A,5,3,2
-2023-10-26,Team_M,Team_B,3,2,2
-2023-10-28,Team_F,Team_G,1,0,2
-2023-11-03,Team_O,Team_Q,5,1,2
-2023-11-04,Team_K,Team_B,0,5,0
-2023-11-06,Team_C,Team_J,0,0,1
-2023-11-10,Team_A,Team_Q,2,5,0
-2023-11-10,Team_D,Team_O,5,5,1
-2023-11-11,Team_J,Team_N,2,4,0
-2023-11-13,Team_G,Team_K,3,5,0
-2023-11-14,Team_P,Team_K,3,2,2
-2023-11-15,Team_G,Team_O,4,4,1
-2023-11-15,Team_H,Team_B,5,3,2
-2023-11-17,Team_N,Team_B,2,5,0
-2023-11-19,Team_F,Team_P,0,3,0
-2023-11-19,Team_H,Team_B,5,0,2
-2023-11-19,Team_C,Team_O,5,3,2
-2023-11-21,Team_I,Team_A,1,2,0
-2023-11-21,Team_P,Team_J,5,3,2
-2023-11-22,Team_E,Team_H,0,3,0
-2023-11-22,Team_J,Team_A,0,2,0
-2023-11-24,Team_G,Team_Q,2,1,2
-2023-11-27,Team_R,Team_N,4,5,0
-2023-11-27,Team_O,Team_K,0,2,0
-2023-11-30,Team_N,Team_F,0,0,1
-2023-12-01,Team_M,Team_E,4,5,0
-2023-12-05,Team_C,Team_B,0,3,0
-2023-12-05,Team_F,Team_M,4,1,2
-2023-12-07,Team_R,Team_N,1,3,0
-2023-12-08,Team_M,Team_B,1,4,0
-2023-12-10,Team_J,Team_L,2,0,2
-2023-12-11,Team_L,Team_E,4,1,2
-2023-12-11,Team_B,Team_I,5,0,2
-2023-12-12,Team_L,Team_C,4,0,2
-2023-12-12,Team_G,Team_N,1,4,0
-2023-12-12,Team_D,Team_A,1,3,0
-2023-12-12,Team_C,Team_E,4,1,2
-2023-12-13,Team_C,Team_B,5,1,2
-2023-12-14,Team_G,Team_J,2,3,0
-2023-12-14,Team_L,Team_G,5,1,2
-2023-12-15,Team_P,Team_O,4,0,2
-2023-12-20,Team_O,Team_P,4,4,1
-2023-12-25,Team_F,Team_R,4,5,0
-2023-12-27,Team_K,Team_H,5,3,2
-2023-12-28,Team_I,Team_C,0,1,0
-2023-12-29,Team_C,Team_Q,3,4,0
+2024-02-23,Sanfrecce Hiroshima,Urawa Reds,2,0,2
+2024-02-23,Nagoya Grampus,Kashima Antlers,0,3,0
+2024-02-24,Jubilo Iwata,Vissel Kobe,0,2,0
+2024-02-24,Avispa Fukuoka,Consadole Sapporo,0,0,1
+2024-02-24,Sagan Tosu,Albirex Niigata,1,2,0
+2024-02-24,Machida Zelvia,Gamba Osaka,1,1,1
+2024-02-24,Cerezo Osaka,FC Tokyo,2,2,1
+2024-02-24,Shonan Bellmare,Kawasaki Frontale,1,2,0
+2024-02-25,Kashiwa Reysol,Kyoto Sanga,1,1,1
+2024-02-25,FC Tokyo,Yokohama FM,1,2,0
+2024-03-01,Yokohama FM,Avispa Fukuoka,0,1,0
+2024-03-01,Kawasaki Frontale,Jubilo Iwata,4,5,0
+2024-03-02,Vissel Kobe,Kashiwa Reysol,0,1,0
+2024-03-02,Nagoya Grampus,Machida Zelvia,0,1,0
+2024-03-02,Kyoto Sanga,Shonan Bellmare,1,2,0
+2024-03-02,Sagan Tosu,Consadole Sapporo,4,0,2
+2024-03-02,Kashima Antlers,Cerezo Osaka,1,1,1
+2024-03-02,Gamba Osaka,Albirex Niigata,1,0,2
+2024-03-02,FC Tokyo,Sanfrecce Hiroshima,1,1,1
+2024-03-03,Urawa Reds,FC Tokyo,1,1,1
+2024-03-09,Albirex Niigata,Nagoya Grampus,1,0,2
+2024-03-09,Sanfrecce Hiroshima,Sagan Tosu,4,0,2
+2024-03-09,Machida Zelvia,Kashima Antlers,1,0,2
+2024-03-09,Jubilo Iwata,Kashiwa Reysol,0,1,0
+2024-03-09,Kawasaki Frontale,Kyoto Sanga,0,1,0
+2024-03-09,FC Tokyo,Vissel Kobe,1,2,0
+2024-03-09,Cerezo Osaka,FC Tokyo,2,1,2
+2024-03-09,Avispa Fukuoka,Shonan Bellmare,1,1,1
+2024-03-10,Consadole Sapporo,Urawa Reds,0,1,0
+2024-03-16,Vissel Kobe,Sanfrecce Hiroshima,0,0,1
+2024-03-16,Consadole Sapporo,Machida Zelvia,1,2,0
+2024-03-16,Sagan Tosu,Cerezo Osaka,0,2,0
+2024-03-16,Avispa Fukuoka,FC Tokyo,1,3,0
+2024-03-16,Gamba Osaka,Jubilo Iwata,2,1,2
+2024-03-16,FC Tokyo,Albirex Niigata,2,2,1
+2024-03-16,Kashiwa Reysol,Nagoya Grampus,0,2,0
+2024-03-17,Kyoto Sanga,Yokohama FM,2,3,0
+2024-03-17,Shonan Bellmare,Urawa Reds,4,4,1
+2024-03-17,Kashima Antlers,Kawasaki Frontale,2,1,2
+2024-03-29,FC Tokyo,Kyoto Sanga,2,2,1
+2024-03-30,Vissel Kobe,Consadole Sapporo,6,1,2
+2024-03-30,Sanfrecce Hiroshima,Gamba Osaka,1,1,1
+2024-03-30,Albirex Niigata,Kashiwa Reysol,1,1,1
+2024-03-30,Cerezo Osaka,Shonan Bellmare,2,0,2
+2024-03-30,Machida Zelvia,Sagan Tosu,3,1,2
+2024-03-30,Kawasaki Frontale,FC Tokyo,3,0,2
+2024-03-30,Nagoya Grampus,Yokohama FM,2,1,2
+2024-03-30,Kashima Antlers,Jubilo Iwata,1,0,2
+2024-03-30,Urawa Reds,Avispa Fukuoka,2,1,2
+2024-04-03,Jubilo Iwata,Albirex Niigata,2,0,2
+2024-04-03,Gamba Osaka,Kyoto Sanga,0,0,1
+2024-04-03,Kashiwa Reysol,Cerezo Osaka,1,1,1
+2024-04-03,Shonan Bellmare,FC Tokyo,1,2,0
+2024-04-03,Machida Zelvia,Sanfrecce Hiroshima,1,2,0
+2024-04-03,Avispa Fukuoka,Kashima Antlers,1,0,2
+2024-04-03,Yokohama FM,Kawasaki Frontale,0,0,1
+2024-04-03,Sagan Tosu,Vissel Kobe,0,0,1
+2024-04-03,Consadole Sapporo,Nagoya Grampus,1,2,0
+2024-04-03,FC Tokyo,Urawa Reds,2,1,2
+2024-04-06,Consadole Sapporo,Gamba Osaka,1,0,2
+2024-04-07,Kawasaki Frontale,Machida Zelvia,0,1,0
+2024-04-07,FC Tokyo,Kashima Antlers,2,0,2
+2024-04-07,FC Tokyo,Kashiwa Reysol,1,1,1
+2024-04-07,Kyoto Sanga,Jubilo Iwata,0,3,0
+2024-04-07,Albirex Niigata,Cerezo Osaka,0,1,0
+2024-04-07,Sanfrecce Hiroshima,Shonan Bellmare,2,0,2
+2024-04-07,Vissel Kobe,Yokohama FM,1,2,0
+2024-04-07,Urawa Reds,Sagan Tosu,3,0,2
+2024-04-07,Nagoya Grampus,Avispa Fukuoka,0,0,1
+2024-04-10,Yokohama FM,Gamba Osaka,2,0,2
+2024-04-12,Kashiwa Reysol,Urawa Reds,1,0,2
+2024-04-13,Jubilo Iwata,Nagoya Grampus,0,1,0
+2024-04-13,Yokohama FM,Shonan Bellmare,2,2,1
+2024-04-13,Albirex Niigata,Consadole Sapporo,1,1,1
+2024-04-13,Avispa Fukuoka,Sanfrecce Hiroshima,1,1,1
+2024-04-13,Cerezo Osaka,Kawasaki Frontale,1,0,2
+2024-04-13,Kashima Antlers,Kyoto Sanga,1,0,2
+2024-04-13,Machida Zelvia,Vissel Kobe,1,2,0
+2024-04-13,FC Tokyo,FC Tokyo,2,2,1
+2024-04-14,Gamba Osaka,Sagan Tosu,2,1,2
+2024-04-20,Kyoto Sanga,Albirex Niigata,0,1,0
+2024-04-20,Consadole Sapporo,Sanfrecce Hiroshima,1,1,1
+2024-04-20,Sagan Tosu,Kashima Antlers,4,2,2
+2024-04-20,Avispa Fukuoka,Jubilo Iwata,2,2,1
+2024-04-20,Shonan Bellmare,Vissel Kobe,0,1,0
+2024-04-20,Kawasaki Frontale,FC Tokyo,0,0,1
+2024-04-20,Urawa Reds,Gamba Osaka,0,1,0
+2024-04-21,Nagoya Grampus,Cerezo Osaka,2,1,2
+2024-04-21,FC Tokyo,Machida Zelvia,1,2,0
+2024-04-27,Consadole Sapporo,Shonan Bellmare,3,3,1
+2024-04-27,Jubilo Iwata,Machida Zelvia,2,0,2
+2024-04-27,Albirex Niigata,FC Tokyo,1,3,0
+2024-04-27,Vissel Kobe,Kyoto Sanga,0,1,0
+2024-04-27,Cerezo Osaka,Yokohama FM,2,2,1
+2024-04-28,FC Tokyo,Avispa Fukuoka,0,0,1
+2024-04-28,Sanfrecce Hiroshima,Kawasaki Frontale,2,2,1
+2024-04-28,Gamba Osaka,Kashima Antlers,1,2,0
+2024-04-28,Kashiwa Reysol,Sagan Tosu,1,1,1
+2024-04-28,Urawa Reds,Nagoya Grampus,2,1,2
+2024-05-03,Kashima Antlers,Shonan Bellmare,3,1,2
+2024-05-03,Yokohama FM,Jubilo Iwata,1,1,1
+2024-05-03,Albirex Niigata,Sanfrecce Hiroshima,1,1,1
+2024-05-03,Cerezo Osaka,Consadole Sapporo,1,1,1
+2024-05-03,Machida Zelvia,Kashiwa Reysol,2,0,2
+2024-05-03,FC Tokyo,Kyoto Sanga,2,1,2
+2024-05-03,Avispa Fukuoka,Gamba Osaka,1,0,2
+2024-05-03,Kawasaki Frontale,Urawa Reds,3,1,2
+2024-05-03,Nagoya Grampus,Vissel Kobe,0,2,0
+2024-05-03,Sagan Tosu,FC Tokyo,0,2,0
+2024-05-06,Consadole Sapporo,FC Tokyo,1,2,0
+2024-05-06,Kyoto Sanga,Machida Zelvia,0,3,0
+2024-05-06,Vissel Kobe,Albirex Niigata,3,2,2
+2024-05-06,Gamba Osaka,Cerezo Osaka,1,0,2
+2024-05-06,FC Tokyo,Jubilo Iwata,3,2,2
+2024-05-06,Sanfrecce Hiroshima,Nagoya Grampus,2,3,0
+2024-05-06,Kashiwa Reysol,Kashima Antlers,1,2,0
+2024-05-06,Shonan Bellmare,Sagan Tosu,2,1,2
+2024-05-06,Urawa Reds,Yokohama FM,2,1,2
+2024-05-06,Avispa Fukuoka,Kawasaki Frontale,1,1,1
+2024-05-11,Kyoto Sanga,Avispa Fukuoka,2,3,0
+2024-05-11,Shonan Bellmare,Machida Zelvia,0,0,1
+2024-05-11,Albirex Niigata,Urawa Reds,2,4,0
+2024-05-11,Jubilo Iwata,Sagan Tosu,0,3,0
+2024-05-11,Cerezo Osaka,Vissel Kobe,1,4,0
+2024-05-11,Nagoya Grampus,Gamba Osaka,0,1,0
+2024-05-11,FC Tokyo,Kashiwa Reysol,3,3,1
+2024-05-11,Kawasaki Frontale,Consadole Sapporo,3,0,2
+2024-05-12,Kashima Antlers,FC Tokyo,3,3,1
+2024-05-15,Albirex Niigata,Yokohama FM,3,1,2
+2024-05-15,FC Tokyo,Gamba Osaka,0,0,1
+2024-05-15,Consadole Sapporo,Jubilo Iwata,1,0,2
+2024-05-15,Kashiwa Reysol,Shonan Bellmare,2,1,2
+2024-05-15,Sanfrecce Hiroshima,Kashima Antlers,1,3,0
+2024-05-15,Sagan Tosu,Kawasaki Frontale,5,2,2
+2024-05-15,Vissel Kobe,Avispa Fukuoka,1,0,2
+2024-05-15,Nagoya Grampus,FC Tokyo,3,1,2
+2024-05-15,Urawa Reds,Kyoto Sanga,3,0,2
+2024-05-15,Machida Zelvia,Cerezo Osaka,2,1,2
+2024-05-18,Avispa Fukuoka,Cerezo Osaka,0,3,0
+2024-05-18,Sagan Tosu,Nagoya Grampus,0,2,0
+2024-05-19,Jubilo Iwata,Urawa Reds,1,1,1
+2024-05-19,Kyoto Sanga,Sanfrecce Hiroshima,0,5,0
+2024-05-19,Machida Zelvia,FC Tokyo,5,0,2
+2024-05-19,Gamba Osaka,Kawasaki Frontale,3,1,2
+2024-05-19,Kashima Antlers,Vissel Kobe,1,0,2
+2024-05-19,FC Tokyo,Yokohama FM,1,1,1
+2024-05-19,Kashiwa Reysol,Consadole Sapporo,2,1,2
+2024-05-19,Shonan Bellmare,Albirex Niigata,2,1,2
+2024-05-25,Jubilo Iwata,Shonan Bellmare,3,2,2
+2024-05-25,Consadole Sapporo,Kashima Antlers,0,3,0
+2024-05-25,Albirex Niigata,Avispa Fukuoka,1,2,0
+2024-05-25,Kawasaki Frontale,Kashiwa Reysol,1,1,1
+2024-05-26,Vissel Kobe,FC Tokyo,0,1,0
+2024-05-26,Urawa Reds,Machida Zelvia,1,2,0
+2024-05-26,FC Tokyo,Gamba Osaka,0,1,0
+2024-05-26,Nagoya Grampus,Kyoto Sanga,1,1,1
+2024-05-26,Cerezo Osaka,Sanfrecce Hiroshima,1,1,1
+2024-05-29,Yokohama FM,Kashiwa Reysol,4,0,2
+2024-05-31,Sagan Tosu,FC Tokyo,0,1,0
+2024-06-01,Sanfrecce Hiroshima,Jubilo Iwata,2,0,2
+2024-06-01,Kashima Antlers,Yokohama FM,3,2,2
+2024-06-01,Machida Zelvia,Albirex Niigata,1,3,0
+2024-06-01,Shonan Bellmare,Gamba Osaka,1,2,0
+2024-06-01,Urawa Reds,Vissel Kobe,1,1,1
+2024-06-01,Kyoto Sanga,Cerezo Osaka,1,1,1
+2024-06-02,FC Tokyo,Consadole Sapporo,5,3,2
+2024-06-02,Kawasaki Frontale,Nagoya Grampus,2,1,2
+2024-06-02,Kashiwa Reysol,Avispa Fukuoka,0,2,0
+2024-06-15,Sanfrecce Hiroshima,FC Tokyo,4,1,2
+2024-06-15,Yokohama FM,Machida Zelvia,1,3,0
+2024-06-15,Kyoto Sanga,Consadole Sapporo,2,0,2
+2024-06-15,Cerezo Osaka,Urawa Reds,2,1,2
+2024-06-16,Vissel Kobe,Kawasaki Frontale,1,0,2
+2024-06-16,Avispa Fukuoka,Sagan Tosu,2,0,2
+2024-06-16,Gamba Osaka,Kashiwa Reysol,2,1,2
+2024-06-16,FC Tokyo,Jubilo Iwata,1,1,1
+2024-06-16,Kashima Antlers,Albirex Niigata,1,1,1
+2024-06-16,Nagoya Grampus,Shonan Bellmare,1,1,1
+2024-06-19,Yokohama FM,Sanfrecce Hiroshima,3,2,2
+2024-06-22,Urawa Reds,Kashima Antlers,2,2,1
+2024-06-22,Jubilo Iwata,Cerezo Osaka,1,1,1
+2024-06-22,Machida Zelvia,Avispa Fukuoka,0,0,1
+2024-06-22,FC Tokyo,Nagoya Grampus,1,0,2
+2024-06-22,Albirex Niigata,Kawasaki Frontale,2,2,1
+2024-06-22,Sagan Tosu,Kyoto Sanga,3,0,2
+2024-06-22,Shonan Bellmare,FC Tokyo,0,1,0
+2024-06-22,Gamba Osaka,Vissel Kobe,2,1,2
+2024-06-22,Kashiwa Reysol,Sanfrecce Hiroshima,0,1,0
+2024-06-23,Consadole Sapporo,Yokohama FM,0,1,0
+2024-06-26,Cerezo Osaka,Sagan Tosu,1,0,2
+2024-06-26,Vissel Kobe,Machida Zelvia,0,0,1
+2024-06-26,Kashima Antlers,Gamba Osaka,0,0,1
+2024-06-26,Jubilo Iwata,FC Tokyo,3,0,2
+2024-06-26,Nagoya Grampus,Urawa Reds,0,1,0
+2024-06-26,Avispa Fukuoka,Yokohama FM,2,1,2
+2024-06-26,Sanfrecce Hiroshima,Albirex Niigata,1,1,1
+2024-06-26,FC Tokyo,Consadole Sapporo,1,0,2
+2024-06-26,Kyoto Sanga,Kashiwa Reysol,2,2,1
+2024-06-26,Kawasaki Frontale,Shonan Bellmare,1,1,1
+2024-06-29,Consadole Sapporo,Albirex Niigata,0,1,0
+2024-06-29,Kawasaki Frontale,Sanfrecce Hiroshima,1,1,1
+2024-06-29,Yokohama FM,FC Tokyo,1,2,0
+2024-06-30,Urawa Reds,Jubilo Iwata,3,0,2
+2024-06-30,Gamba Osaka,Machida Zelvia,1,3,0
+2024-06-30,Vissel Kobe,Kashima Antlers,3,1,2
+2024-06-30,Cerezo Osaka,Nagoya Grampus,2,1,2
+2024-06-30,Shonan Bellmare,Kyoto Sanga,0,1,0
+2024-06-30,Sagan Tosu,Kashiwa Reysol,1,4,0
+2024-06-30,FC Tokyo,Avispa Fukuoka,0,1,0
+2024-07-03,Yokohama FM,Sagan Tosu,0,1,0
+2024-07-05,Sanfrecce Hiroshima,Vissel Kobe,1,3,0
+2024-07-06,Gamba Osaka,Yokohama FM,4,0,2
+2024-07-06,Urawa Reds,Shonan Bellmare,2,3,0
+2024-07-06,Kashima Antlers,Consadole Sapporo,2,0,2
+2024-07-06,Machida Zelvia,Nagoya Grampus,1,0,2
+2024-07-06,Jubilo Iwata,Kawasaki Frontale,2,2,1
+2024-07-06,Albirex Niigata,Sagan Tosu,3,4,0
+2024-07-06,FC Tokyo,Cerezo Osaka,1,1,1
+2024-07-06,Kashiwa Reysol,FC Tokyo,3,2,2
+2024-07-07,Avispa Fukuoka,Kyoto Sanga,1,2,0
+2024-07-13,Consadole Sapporo,Vissel Kobe,1,1,1
+2024-07-13,FC Tokyo,Albirex Niigata,2,0,2
+2024-07-14,FC Tokyo,Machida Zelvia,0,1,0
+2024-07-14,Nagoya Grampus,Kashiwa Reysol,2,1,2
+2024-07-14,Sanfrecce Hiroshima,Avispa Fukuoka,1,0,2
+2024-07-14,Kyoto Sanga,Urawa Reds,0,0,1
+2024-07-14,Shonan Bellmare,Jubilo Iwata,5,0,2
+2024-07-14,Sagan Tosu,Gamba Osaka,0,2,0
+2024-07-14,Kawasaki Frontale,Cerezo Osaka,1,1,1
+2024-07-14,Yokohama FM,Kashima Antlers,4,1,2
+2024-07-20,Vissel Kobe,Nagoya Grampus,3,3,1
+2024-07-20,Machida Zelvia,Yokohama FM,1,2,0
+2024-07-20,Gamba Osaka,Shonan Bellmare,0,1,0
+2024-07-20,Jubilo Iwata,Kyoto Sanga,1,2,0
+2024-07-20,Avispa Fukuoka,FC Tokyo,0,1,0
+2024-07-20,Kashiwa Reysol,Kawasaki Frontale,2,3,0
+2024-07-20,Urawa Reds,Consadole Sapporo,3,4,0
+2024-07-20,Cerezo Osaka,Albirex Niigata,1,2,0
+2024-07-20,Kashima Antlers,FC Tokyo,2,1,2
+2024-07-21,Sagan Tosu,Sanfrecce Hiroshima,1,4,0
+2024-08-07,Albirex Niigata,Jubilo Iwata,2,2,1
+2024-08-07,Cerezo Osaka,Machida Zelvia,0,0,1
+2024-08-07,FC Tokyo,Sanfrecce Hiroshima,0,1,0
+2024-08-07,Gamba Osaka,FC Tokyo,0,0,1
+2024-08-07,Kashima Antlers,Sagan Tosu,3,0,2
+2024-08-07,Kyoto Sanga,Nagoya Grampus,3,2,2
+2024-08-07,Shonan Bellmare,Avispa Fukuoka,1,1,1
+2024-08-07,Yokohama FM,Consadole Sapporo,3,2,2
+2024-08-07,Kawasaki Frontale,Vissel Kobe,3,0,2
+2024-08-10,Consadole Sapporo,Avispa Fukuoka,2,2,1
+2024-08-11,Kashiwa Reysol,Gamba Osaka,0,0,1
+2024-08-11,Machida Zelvia,Shonan Bellmare,0,1,0
+2024-08-11,Sanfrecce Hiroshima,Cerezo Osaka,2,0,2
+2024-08-11,Jubilo Iwata,Kashima Antlers,2,1,2
+2024-08-11,Nagoya Grampus,FC Tokyo,1,0,2
+2024-08-11,Sagan Tosu,Urawa Reds,1,1,1
+2024-08-11,Yokohama FM,Vissel Kobe,1,2,0
+2024-08-11,FC Tokyo,Kawasaki Frontale,0,3,0
+2024-08-12,Albirex Niigata,Kyoto Sanga,2,0,2
+2024-08-16,Consadole Sapporo,Sagan Tosu,5,3,2
+2024-08-17,Cerezo Osaka,Kyoto Sanga,3,5,0
+2024-08-17,Vissel Kobe,Gamba Osaka,2,2,1
+2024-08-17,Machida Zelvia,Jubilo Iwata,4,0,2
+2024-08-17,Kawasaki Frontale,Yokohama FM,1,3,0
+2024-08-17,Kashima Antlers,Urawa Reds,0,0,1
+2024-08-17,Nagoya Grampus,Sanfrecce Hiroshima,1,2,0
+2024-08-17,Avispa Fukuoka,Albirex Niigata,0,1,0
+2024-08-17,FC Tokyo,FC Tokyo,0,0,1
+2024-08-17,Shonan Bellmare,Kashiwa Reysol,1,2,0
+2024-08-24,Gamba Osaka,Avispa Fukuoka,2,2,1
+2024-08-24,Shonan Bellmare,Nagoya Grampus,0,1,0
+2024-08-24,Kyoto Sanga,FC Tokyo,3,0,2
+2024-08-24,Yokohama FM,Cerezo Osaka,4,0,2
+2024-08-25,FC Tokyo,Kashima Antlers,2,1,2
+2024-08-25,Jubilo Iwata,Consadole Sapporo,0,2,0
+2024-08-25,Sanfrecce Hiroshima,Kashiwa Reysol,2,0,2
+2024-08-25,Vissel Kobe,Sagan Tosu,2,0,2
+2024-08-25,Albirex Niigata,Machida Zelvia,0,0,1
+2024-08-31,Machida Zelvia,Urawa Reds,2,2,1
+2024-08-31,Sanfrecce Hiroshima,FC Tokyo,3,2,2
+2024-08-31,Kashiwa Reysol,FC Tokyo,2,3,0
+2024-08-31,Sagan Tosu,Shonan Bellmare,1,2,0
+2024-09-01,Consadole Sapporo,Kawasaki Frontale,2,0,2
+2024-09-01,Avispa Fukuoka,Vissel Kobe,0,2,0
+2024-09-13,Kawasaki Frontale,Sagan Tosu,3,2,2
+2024-09-13,Vissel Kobe,Cerezo Osaka,2,1,2
+2024-09-13,Yokohama FM,Kyoto Sanga,1,2,0
+2024-09-14,Avispa Fukuoka,Machida Zelvia,0,3,0
+2024-09-14,Gamba Osaka,Urawa Reds,0,1,0
+2024-09-14,Kashima Antlers,Sanfrecce Hiroshima,2,2,1
+2024-09-14,FC Tokyo,Nagoya Grampus,4,1,2
+2024-09-14,Kashiwa Reysol,Jubilo Iwata,0,2,0
+2024-09-14,Albirex Niigata,Shonan Bellmare,3,1,2
+2024-09-14,Consadole Sapporo,FC Tokyo,0,2,0
+2024-09-18,Nagoya Grampus,Albirex Niigata,3,0,2
+2024-09-21,Kashima Antlers,Kashiwa Reysol,0,0,1
+2024-09-21,Machida Zelvia,Consadole Sapporo,0,0,1
+2024-09-21,Urawa Reds,FC Tokyo,0,2,0
+2024-09-21,Jubilo Iwata,Avispa Fukuoka,0,0,1
+2024-09-22,FC Tokyo,Sagan Tosu,2,0,2
+2024-09-22,Nagoya Grampus,Kawasaki Frontale,2,0,2
+2024-09-22,Albirex Niigata,Vissel Kobe,2,3,0
+2024-09-22,Kyoto Sanga,Gamba Osaka,2,2,1
+2024-09-22,Shonan Bellmare,Cerezo Osaka,1,2,0
+2024-09-22,Sanfrecce Hiroshima,Yokohama FM,6,2,2
+2024-09-27,Kawasaki Frontale,Albirex Niigata,5,1,2
+2024-09-28,Nagoya Grampus,Jubilo Iwata,2,0,2
+2024-09-28,Yokohama FM,FC Tokyo,1,3,0
+2024-09-28,Consadole Sapporo,Kyoto Sanga,2,0,2
+2024-09-28,Shonan Bellmare,Kashima Antlers,3,2,2
+2024-09-28,Gamba Osaka,FC Tokyo,1,1,1
+2024-09-28,Vissel Kobe,Urawa Reds,1,0,2
+2024-09-28,Sagan Tosu,Avispa Fukuoka,0,0,1
+2024-09-28,Sanfrecce Hiroshima,Machida Zelvia,2,0,2
+2024-09-28,Cerezo Osaka,Kashiwa Reysol,0,0,1
+2024-10-02,Cerezo Osaka,Gamba Osaka,1,0,2
+2024-10-04,Avispa Fukuoka,Nagoya Grampus,1,0,2
+2024-10-05,FC Tokyo,Sagan Tosu,1,1,1
+2024-10-05,Albirex Niigata,Kashima Antlers,0,4,0
+2024-10-05,Machida Zelvia,Kawasaki Frontale,1,4,0
+2024-10-05,Kashiwa Reysol,Yokohama FM,1,0,2
+2024-10-05,Gamba Osaka,Consadole Sapporo,2,1,2
+2024-10-05,Urawa Reds,Cerezo Osaka,0,1,0
+2024-10-06,Kyoto Sanga,Vissel Kobe,2,3,0
+2024-10-06,Jubilo Iwata,Sanfrecce Hiroshima,1,2,0
+2024-10-06,FC Tokyo,Shonan Bellmare,0,2,0
+2024-10-18,Vissel Kobe,FC Tokyo,0,2,0
+2024-10-18,Kawasaki Frontale,Gamba Osaka,1,1,1
+2024-10-18,Yokohama FM,Albirex Niigata,0,0,1
+2024-10-19,Kashima Antlers,Avispa Fukuoka,0,0,1
+2024-10-19,Kashiwa Reysol,Machida Zelvia,1,1,1
+2024-10-19,FC Tokyo,Urawa Reds,2,1,2
+2024-10-19,Nagoya Grampus,Consadole Sapporo,0,2,0
+2024-10-19,Cerezo Osaka,Jubilo Iwata,1,2,0
+2024-10-19,Shonan Bellmare,Sanfrecce Hiroshima,2,1,2
+2024-10-19,Kyoto Sanga,Sagan Tosu,2,0,2
+2024-10-23,Urawa Reds,Kashiwa Reysol,1,0,2
+2024-10-23,Gamba Osaka,Nagoya Grampus,3,2,2
+2024-10-23,Albirex Niigata,FC Tokyo,0,2,0
+2024-10-30,Yokohama FM,Urawa Reds,0,0,1
+2024-11-01,Kawasaki Frontale,Kashima Antlers,1,3,0
+2024-11-01,Vissel Kobe,Jubilo Iwata,2,0,2
+2024-11-03,FC Tokyo,Shonan Bellmare,0,2,0
+2024-11-03,Sanfrecce Hiroshima,Kyoto Sanga,0,1,0
+2024-11-03,Sagan Tosu,Machida Zelvia,2,1,2
+2024-11-03,Avispa Fukuoka,Kashiwa Reysol,2,1,2
+2024-11-03,Consadole Sapporo,Cerezo Osaka,1,1,1
+2024-11-09,Kashiwa Reysol,Albirex Niigata,1,1,1
+2024-11-09,Cerezo Osaka,Avispa Fukuoka,1,0,2
+2024-11-09,Kashima Antlers,Nagoya Grampus,0,0,1
+2024-11-09,Sagan Tosu,Yokohama FM,1,2,0
+2024-11-09,Kyoto Sanga,Kawasaki Frontale,1,1,1
+2024-11-09,Machida Zelvia,FC Tokyo,3,0,2
+2024-11-09,Shonan Bellmare,Consadole Sapporo,1,1,1
+2024-11-09,Jubilo Iwata,Gamba Osaka,3,4,0
+2024-11-10,FC Tokyo,Vissel Kobe,1,1,1
+2024-11-10,Urawa Reds,Sanfrecce Hiroshima,3,0,2
+2024-11-16,Jubilo Iwata,Yokohama FM,3,4,0
+2024-11-17,Kyoto Sanga,Kashima Antlers,0,0,1
+2024-11-22,Urawa Reds,Kawasaki Frontale,1,1,1
+2024-11-30,Cerezo Osaka,Kashima Antlers,0,2,0
+2024-11-30,Kashiwa Reysol,Vissel Kobe,1,1,1
+2024-11-30,Albirex Niigata,Gamba Osaka,0,1,0
+2024-11-30,Jubilo Iwata,FC Tokyo,2,1,2
+2024-11-30,FC Tokyo,Kawasaki Frontale,4,5,0
+2024-11-30,Shonan Bellmare,Yokohama FM,2,3,0
+2024-11-30,Nagoya Grampus,Sagan Tosu,0,3,0
+2024-11-30,Machida Zelvia,Kyoto Sanga,1,0,2
+2024-11-30,Avispa Fukuoka,Urawa Reds,1,0,2
+2024-12-01,Sanfrecce Hiroshima,Consadole Sapporo,5,1,2
+2024-12-08,FC Tokyo,Cerezo Osaka,3,0,2
+2024-12-08,Kyoto Sanga,FC Tokyo,0,0,1
+2024-12-08,Kawasaki Frontale,Avispa Fukuoka,3,1,2
+2024-12-08,Vissel Kobe,Shonan Bellmare,3,0,2
+2024-12-08,Sagan Tosu,Jubilo Iwata,3,0,2
+2024-12-08,Yokohama FM,Nagoya Grampus,0,2,0
+2024-12-08,Consadole Sapporo,Kashiwa Reysol,1,0,2
+2024-12-08,Kashima Antlers,Machida Zelvia,3,1,2
+2024-12-08,Gamba Osaka,Sanfrecce Hiroshima,3,1,2
+2024-12-08,Urawa Reds,Albirex Niigata,0,0,1

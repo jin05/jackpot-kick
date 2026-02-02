@@ -56,8 +56,10 @@ TEAM_NAME_MAP: dict[str, str] = {
     "京都": "Kyoto Sanga",
     "ガンバ大阪": "Gamba Osaka",
     "G大阪": "Gamba Osaka",
+    "Ｇ大阪": "Gamba Osaka",
     "セレッソ大阪": "Cerezo Osaka",
     "C大阪": "Cerezo Osaka",
+    "Ｃ大阪": "Cerezo Osaka",
     "ヴィッセル神戸": "Vissel Kobe",
     "神戸": "Vissel Kobe",
     # 中国・四国
@@ -212,33 +214,39 @@ class JLeagueScraper:
             soup = BeautifulSoup(response.text, "html.parser")
 
             # 試合結果テーブルを探す
-            # 注意: 実際のHTML構造に応じてセレクタを調整
+            # JリーグデータサイトのHTML構造に基づいてセレクタを指定
             match_tables = soup.select("table.search-table tbody tr")
 
             if not match_tables:
                 # 代替セレクタを試す
+                self._log("Warning: table.search-table not found, trying alternative selectors")
                 match_tables = soup.select("table tbody tr")
 
             for row in match_tables:
                 try:
                     cells = row.find_all("td")
-                    if len(cells) < 5:
+                    if len(cells) < 8:  # 最低8セル必要（日付、ホーム、スコア、アウェイを含む）
                         continue
 
                     # HTML構造に応じてデータを抽出
-                    # 典型的な構造: 日付, ホーム, スコア, アウェイ, ...
-                    date_text = cells[0].get_text(strip=True)
-                    home_team_text = cells[1].get_text(strip=True)
-                    score_text = cells[2].get_text(strip=True)
-                    away_team_text = cells[3].get_text(strip=True)
+                    # 実際の構造: [0]シーズン, [1]大会, [2]節, [3]試合日, [4]KO時刻,
+                    #             [5]ホーム, [6]スコア, [7]アウェイ, [8]スタジアム, ...
+                    date_text = cells[3].get_text(strip=True)  # 試合日
+                    home_team_text = cells[5].get_text(strip=True)  # ホーム
+                    score_text = cells[6].get_text(strip=True)  # スコア
+                    away_team_text = cells[7].get_text(strip=True)  # アウェイ
 
                     # 日付のパース
                     try:
                         # 複数の日付フォーマットに対応
                         date_obj = None
-                        for fmt in ["%Y/%m/%d", "%Y-%m-%d", "%Y年%m月%d日"]:
+                        # まず "YY/MM/DD(曜日)" 形式をクリーンアップ
+                        date_clean = date_text.split("(")[0].strip()  # "24/02/23(金・祝)" -> "24/02/23"
+
+                        # 年を4桁にする必要がある
+                        for fmt in ["%y/%m/%d", "%Y/%m/%d", "%Y-%m-%d", "%Y年%m月%d日"]:
                             try:
-                                date_obj = datetime.strptime(date_text, fmt)
+                                date_obj = datetime.strptime(date_clean, fmt)
                                 break
                             except ValueError:
                                 continue

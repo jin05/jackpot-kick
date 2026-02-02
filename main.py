@@ -13,7 +13,6 @@ from src import (
     JLeagueScraper,
     scrape_jleague_data,
 )
-from src.predictor import create_sample_matches
 
 
 def main():
@@ -180,19 +179,46 @@ def main():
     print("=" * 50)
 
     # MatchPredictorの初期化
-    # 過去データから学習済みのFeatureEngineerを使用
     predictor = MatchPredictor(
         model=model,
         engineer=engineer,
         verbose=True,
     )
 
-    # サンプルの対戦カードを作成
-    matches = create_sample_matches()
-    print(f"\n次回Toto対象試合: {len(matches)}試合")
+    # 【修正箇所】ダミーデータではなく、実在するチーム名（scraper.pyの英語表記）を使用
+    # ※以下はサンプルとして、Jリーグの強豪やダービーマッチを設定しています
+    real_matches = [
+        MatchCard(
+            home_team="Urawa Reds",    # 浦和レッズ
+            away_team="Gamba Osaka",   # ガンバ大阪
+            odds=MatchOdds(home_win=2.10, draw=3.30, away_win=3.20),
+        ),
+        MatchCard(
+            home_team="Kawasaki Frontale", # 川崎フロンターレ
+            away_team="Yokohama FM",       # 横浜F・マリノス
+            odds=MatchOdds(home_win=2.40, draw=3.50, away_win=2.60),
+        ),
+        MatchCard(
+            home_team="Vissel Kobe",   # ヴィッセル神戸
+            away_team="Sanfrecce Hiroshima", # サンフレッチェ広島
+            odds=MatchOdds(home_win=2.00, draw=3.40, away_win=3.50),
+        ),
+        MatchCard(
+            home_team="Kashima Antlers", # 鹿島アントラーズ
+            away_team="FC Tokyo",        # FC東京
+            odds=MatchOdds(home_win=1.90, draw=3.20, away_win=3.80),
+        ),
+        MatchCard(
+            home_team="Consadole Sapporo", # コンサドーレ札幌
+            away_team="Avispa Fukuoka",    # アビスパ福岡
+            odds=MatchOdds(home_win=2.30, draw=3.10, away_win=3.00),
+        ),
+    ]
+
+    print(f"\n次回Toto対象試合（仮想）: {len(real_matches)}試合")
 
     # 予測を実行
-    results = predictor.predict_matches(matches)
+    results = predictor.predict_matches(real_matches)
 
     # 結果を表示
     predictor.display_predictions(results)
