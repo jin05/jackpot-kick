@@ -1,3 +1,4 @@
+import argparse
 from pathlib import Path
 
 from src import (
@@ -9,30 +10,72 @@ from src import (
     MatchPredictor,
     MatchCard,
     MatchOdds,
+    JLeagueScraper,
+    scrape_jleague_data,
 )
 from src.predictor import create_sample_matches
 
 
 def main():
-    # ========================================
-    # Phase 1: データ生成
-    # ========================================
-    print("=" * 50)
-    print("Phase 1: Generating mock match data...")
-    print("=" * 50)
-
-    generator = MockDataGenerator(seed=42)
-    df = generator.generate_historical_data(n_samples=1000)
+    # コマンドライン引数のパース
+    parser = argparse.ArgumentParser(description="Toto予測システム")
+    parser.add_argument(
+        "--use-mock",
+        action="store_true",
+        help="MockDataGeneratorを使用（デフォルトはJLeagueScraper）",
+    )
+    parser.add_argument(
+        "--force-download",
+        action="store_true",
+        help="既存ファイルがあっても再ダウンロード",
+    )
+    parser.add_argument(
+        "--years",
+        type=int,
+        nargs="+",
+        default=[2023, 2024, 2025],
+        help="取得する年度（例: --years 2023 2024 2025）",
+    )
+    args = parser.parse_args()
 
     # 保存先ディレクトリの作成
     data_dir = Path("data")
     data_dir.mkdir(exist_ok=True)
-
-    # CSVファイルとして保存
     raw_output_path = data_dir / "raw_match_data.csv"
-    df.to_csv(raw_output_path, index=False)
 
-    print(f"Generated {len(df)} match records")
+    # ========================================
+    # Phase 0/1: データ取得
+    # ========================================
+    print("=" * 50)
+    if args.use_mock:
+        print("Phase 1: Generating mock match data...")
+        print("=" * 50)
+
+        generator = MockDataGenerator(seed=42)
+        df = generator.generate_historical_data(n_samples=1000)
+        df.to_csv(raw_output_path, index=False)
+
+        print(f"Generated {len(df)} mock match records")
+    else:
+        print("Phase 0: Fetching J.League match data...")
+        print("=" * 50)
+
+        # 既にファイルが存在する場合はスキップ
+        if raw_output_path.exists() and not args.force_download:
+            print(f"File already exists: {raw_output_path}")
+            print("Skipping download. Use --force-download to re-download.")
+            df = load_raw_data(raw_output_path)
+        else:
+            # JLeagueScraperを使用してデータを取得
+            df = scrape_jleague_data(
+                years=args.years,
+                output_path=raw_output_path,
+                competition="J1",
+                force_download=args.force_download,
+            )
+
+        print(f"Loaded {len(df)} match records")
+
     print(f"Saved to: {raw_output_path}")
     print(f"\nSample raw data:")
     print(df.head(5))
