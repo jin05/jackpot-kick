@@ -12,6 +12,8 @@ from src import (
     MatchOdds,
     JLeagueScraper,
     scrape_jleague_data,
+    MatchScheduleFetcher,
+    SAMPLE_J1_MATCHES,
 )
 
 
@@ -34,6 +36,11 @@ def main():
         nargs="+",
         default=[2023, 2024, 2025],
         help="取得する年度（例: --years 2023 2024 2025）",
+    )
+    parser.add_argument(
+        "--predict-next",
+        action="store_true",
+        help="次節の対戦カードを自動取得して予測を実行",
     )
     args = parser.parse_args()
 
@@ -185,37 +192,62 @@ def main():
         verbose=True,
     )
 
-    # 【修正箇所】ダミーデータではなく、実在するチーム名（scraper.pyの英語表記）を使用
-    # ※以下はサンプルとして、Jリーグの強豪やダービーマッチを設定しています
-    real_matches = [
-        MatchCard(
-            home_team="Urawa Reds",    # 浦和レッズ
-            away_team="Gamba Osaka",   # ガンバ大阪
-            odds=MatchOdds(home_win=2.10, draw=3.30, away_win=3.20),
-        ),
-        MatchCard(
-            home_team="Kawasaki Frontale", # 川崎フロンターレ
-            away_team="Yokohama FM",       # 横浜F・マリノス
-            odds=MatchOdds(home_win=2.40, draw=3.50, away_win=2.60),
-        ),
-        MatchCard(
-            home_team="Vissel Kobe",   # ヴィッセル神戸
-            away_team="Sanfrecce Hiroshima", # サンフレッチェ広島
-            odds=MatchOdds(home_win=2.00, draw=3.40, away_win=3.50),
-        ),
-        MatchCard(
-            home_team="Kashima Antlers", # 鹿島アントラーズ
-            away_team="FC Tokyo",        # FC東京
-            odds=MatchOdds(home_win=1.90, draw=3.20, away_win=3.80),
-        ),
-        MatchCard(
-            home_team="Consadole Sapporo", # コンサドーレ札幌
-            away_team="Avispa Fukuoka",    # アビスパ福岡
-            odds=MatchOdds(home_win=2.30, draw=3.10, away_win=3.00),
-        ),
-    ]
+    # --predict-next オプションの場合: 次節の対戦カードを自動取得
+    if args.predict_next:
+        print("\n[Phase 5] 次節の対戦カードを自動取得中...")
+        fetcher = MatchScheduleFetcher(verbose=True)
 
-    print(f"\n次回Toto対象試合（仮想）: {len(real_matches)}試合")
+        # 次節の対戦カードを取得
+        scheduled_matches = fetcher.fetch_next_matches()
+
+        if scheduled_matches:
+            # 取得成功: スケジュールを表示
+            fetcher.display_schedule(scheduled_matches)
+            # オッズ付きMatchCardに変換
+            match_cards = fetcher.get_match_cards_with_default_odds(scheduled_matches)
+        else:
+            # 取得失敗: サンプルデータを使用
+            print("\n[警告] スケジュールの自動取得に失敗しました。")
+            print("       サンプルデータを使用して予測を実行します。")
+            match_cards = fetcher.get_match_cards_with_default_odds(SAMPLE_J1_MATCHES)
+
+        # オッズ付き対戦カードを表示
+        fetcher.display_match_cards_with_odds(match_cards)
+
+        real_matches = match_cards
+        print(f"\n次節Toto対象試合: {len(real_matches)}試合")
+    else:
+        # 従来の手動設定モード
+        # ※以下はサンプルとして、Jリーグの強豪やダービーマッチを設定しています
+        real_matches = [
+            MatchCard(
+                home_team="Urawa Reds",    # 浦和レッズ
+                away_team="Gamba Osaka",   # ガンバ大阪
+                odds=MatchOdds(home_win=2.10, draw=3.30, away_win=3.20),
+            ),
+            MatchCard(
+                home_team="Kawasaki Frontale", # 川崎フロンターレ
+                away_team="Yokohama FM",       # 横浜F・マリノス
+                odds=MatchOdds(home_win=2.40, draw=3.50, away_win=2.60),
+            ),
+            MatchCard(
+                home_team="Vissel Kobe",   # ヴィッセル神戸
+                away_team="Sanfrecce Hiroshima", # サンフレッチェ広島
+                odds=MatchOdds(home_win=2.00, draw=3.40, away_win=3.50),
+            ),
+            MatchCard(
+                home_team="Kashima Antlers", # 鹿島アントラーズ
+                away_team="FC Tokyo",        # FC東京
+                odds=MatchOdds(home_win=1.90, draw=3.20, away_win=3.80),
+            ),
+            MatchCard(
+                home_team="Consadole Sapporo", # コンサドーレ札幌
+                away_team="Avispa Fukuoka",    # アビスパ福岡
+                odds=MatchOdds(home_win=2.30, draw=3.10, away_win=3.00),
+            ),
+        ]
+
+        print(f"\n次回Toto対象試合（手動設定）: {len(real_matches)}試合")
 
     # 予測を実行
     results = predictor.predict_matches(real_matches)
