@@ -432,6 +432,9 @@ class MatchScheduleFetcher:
             if key not in seen:
                 seen.add(key)
                 unique_matches.append(match)
+                # デバッグ用: チーム名の変換結果を出力
+                if self.verbose:
+                    print(f"[DEBUG] Match: {match.home_team} ({match.home_team_en}) vs {match.away_team} ({match.away_team_en})")
 
         match_cards = []
         for match in unique_matches:

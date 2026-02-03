@@ -122,6 +122,33 @@ class MatchPredictor:
         self.engineer = engineer
         self.verbose = verbose
 
+        # チーム名の正規化マップを作成
+        # 学習データのチーム名をキーとして、正規化されたチーム名にマッピング
+        self._team_name_map = {}
+        for team in self.engineer._elo_ratings.keys():
+            normalized = self._normalize_team_name(team)
+            self._team_name_map[normalized] = team
+
+        if verbose:
+            print(f"[MatchPredictor] Initialized with {len(self._team_name_map)} teams")
+
+    def _normalize_team_name(self, team_name: str) -> str:
+        """チーム名を正規化（空白の統一、前後の空白削除など）.
+
+        Args:
+            team_name: チーム名
+
+        Returns:
+            正規化されたチーム名
+        """
+        # 前後の空白を削除
+        normalized = team_name.strip()
+        # 複数の空白を1つに統一
+        import re
+        normalized = re.sub(r'\s+', ' ', normalized)
+        # 大文字・小文字は区別する（チーム名は固有名詞のため）
+        return normalized
+
     @classmethod
     def from_files(
         cls,
@@ -164,8 +191,20 @@ class MatchPredictor:
         Returns:
             特徴量の辞書
         """
-        elo = self.engineer._elo_ratings.get(team, self.engineer.initial_elo)
-        form = self.engineer._get_recent_form(team)
+        # チーム名を正規化してマッピング
+        normalized = self._normalize_team_name(team)
+        actual_team = self._team_name_map.get(normalized, team)
+
+        elo = self.engineer._elo_ratings.get(actual_team, self.engineer.initial_elo)
+        form = self.engineer._get_recent_form(actual_team)
+
+        # デバッグ用: チーム名と特徴量を出力
+        if self.verbose:
+            is_known = actual_team in self.engineer._elo_ratings
+            if normalized != actual_team:
+                print(f"[DEBUG] Team: '{team}' -> '{actual_team}', Known: {is_known}, ELO: {elo:.1f}, Form: {form}")
+            else:
+                print(f"[DEBUG] Team: '{team}', Known: {is_known}, ELO: {elo:.1f}, Form: {form}")
 
         return {
             "elo": elo,
@@ -188,10 +227,17 @@ class MatchPredictor:
                 "LabelEncoderが初期化されていません。"
                 "過去データで特徴量エンジニアリングを実行してください。"
             )
+
+        # チーム名を正規化してマッピング
+        normalized = self._normalize_team_name(team)
+        actual_team = self._team_name_map.get(normalized, team)
+
         # 未知のチームの場合は-1を返す
         try:
-            return self.engineer._label_encoder.transform([team])[0]
+            return self.engineer._label_encoder.transform([actual_team])[0]
         except ValueError:
+            if self.verbose:
+                print(f"[WARNING] Unknown team for encoding: '{team}' (normalized: '{actual_team}')")
             return -1
 
     def _prepare_features_for_match(self, match: MatchCard) -> pd.DataFrame:
